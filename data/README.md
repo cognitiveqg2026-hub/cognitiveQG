@@ -33,8 +33,8 @@ is intentionally left blank. Re-join the arguments to these annotations via the
 
 ## Guidelines
 
-- `guidelines/ANNOTATION_GUIDELINE_trace_question_coupling.md` — trace–question consistency
-  (consistent vs. inconsistent) labeling rules.
+- `guidelines/Error_Analysis_guideline.pdf` — trace–question consistency (Case 3 & 4)
+  labeling rules: consistent vs. inconsistent, with worked examples.
 - `guidelines/CognitiveQG-Annotaton_Guideline_final.pdf` — full seven-phase annotation guideline.
 
 ## Annotation tools
