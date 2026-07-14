@@ -10,7 +10,7 @@ self-regulation, and up to three grounded Socratic questions).
 Inter-annotator agreement (with the second annotator, *A2*) is reported in
 `../tables/cognitiveqg-iaa-dev1-12_RESCALED.tex` — median Gwet's AC₁ = 0.88 on categorical fields.
 
-## `a2_dev1-12_combined.json`
+## `a2_dev1-12_gold.json`
 
 Second annotator (*A2*) annotations for all **120 arguments**, in the same
 `{"annotations": [...]}` shape and `argumentIndex` (0–119) convention as

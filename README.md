@@ -27,7 +27,7 @@ evaluated (LLaMA-2-7B, LLaMA-3.1-8B, Qwen2.5-7B, Mistral-7B, OLMo-2-7B, Qwen3-8B
 .
 ├── data/                           # expert annotations (argument text withheld; see below)
 │   ├── a1_dev1-12_gold.json         # 120-argument expert gold annotations (A1)
-│   ├── a2_dev1-12_combined.json     # second annotator (A2), 120 args, A1-aligned -> IAA
+│   ├── a2_dev1-12_gold.json         # second annotator (A2), 120 args, A1-aligned -> IAA
 │   ├── guidelines/                  # annotation guidelines (Markdown + PDF)
 │   ├── annotation_tool/             # self-contained HTML annotation interface
 │   └── README.md                    # data access + FOCUS source pointer
@@ -125,7 +125,7 @@ python3 code/compute_field_metrics_latex_rescaled.py
 
 # Inter-annotator agreement (Gwet's AC1 / Cohen's kappa / rescaled BERTScore)
 python3 code/compute_iaa_generic_rescaled.py \
-    --a1 data/a1_dev1-12_gold.json --a2 data/a2_dev1-12_combined.json \
+    --a1 data/a1_dev1-12_gold.json --a2 data/a2_dev1-12_gold.json \
     --out results/baseline_dev1-12/iaa.json
 ```
 

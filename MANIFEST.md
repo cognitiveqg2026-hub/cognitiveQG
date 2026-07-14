@@ -10,7 +10,7 @@ README); all file sizes are well under GitHub's 100 MB limit, so no git-LFS is r
 | Path | Contents |
 |---|---|
 | `data/a1_dev1-12_gold.json` | 120-argument expert gold annotations (annotator A1) |
-| `data/a2_dev1-12_combined.json` | second annotator (A2), 120 args, A1-aligned for IAA |
+| `data/a2_dev1-12_gold.json` | second annotator (A2), 120 args, A1-aligned for IAA |
 | `data/guidelines/` | annotation guidelines (Markdown + PDF) |
 | `data/annotation_tool/` | self-contained HTML annotation interface |
 | `results/baseline_dev1-12/` | RQ1 — annotation review + Combined Trace Score CSV (8 models × 120) |
