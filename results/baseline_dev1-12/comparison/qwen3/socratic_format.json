@@ -1,0 +1,964 @@
+{
+  "results": [
+    {
+      "arg_index": 0,
+      "questions": [
+        "What criteria define \"failure\" in secular ideologies, and could there be different interpretations?",
+        "Are there examples of secular ideologies that have succeeded, and how might they differ from those mentioned?",
+        "Could the failure of certain secular ideologies be attributed to external factors rather than inherent flaws in secularism itself?"
+      ]
+    },
+    {
+      "arg_index": 1,
+      "questions": [
+        "What evidence could help determine if the intent behind these slurs was always violent?",
+        "Could there be situations where similar slurs did not result in violence?",
+        "Are there other factors besides the words themselves that might explain the violent outcomes?"
+      ]
+    },
+    {
+      "arg_index": 2,
+      "questions": [
+        "What evidence supports the idea that state rights are the only factor preventing EC abolition?",
+        "Are there other factors besides state rights that might influence opinions about EC abolition?",
+        "Could the focus on state rights overshadow valid concerns about individual freedoms?"
+      ]
+    },
+    {
+      "arg_index": 3,
+      "questions": [
+        "What evidence could demonstrate that current protests are connected to the policies or actions of Trump or Obama?",
+        "Could there be other reasons why people are protesting besides the actions of Trump or Obama?",
+        "Is it fair to say that current protests reveal nothing about the past actions of Trump or Obama, or might they indicate something different?"
+      ]
+    },
+    {
+      "arg_index": 4,
+      "questions": [
+        "What criteria define a \"radical leftist,\" and how do these align with historical Christian teachings?",
+        "Could there be multiple valid interpretations of Jesus' teachings depending on cultural and historical context?",
+        "Are there scholarly sources that analyze Jesus' political views beyond modern ideological labels?"
+      ]
+    },
+    {
+      "arg_index": 5,
+      "questions": [
+        "What evidence supports the idea that our immigration policies should remain unchanged despite changing circumstances?",
+        "Are there alternative approaches to immigration control that could address concerns while avoiding the extremes of strict enforcement or open borders?",
+        "Could the argument's reliance on historical precedent overlook contemporary challenges that were not present when these policies were originally established?"
+      ]
+    },
+    {
+      "arg_index": 6,
+      "questions": [
+        "What ethical principles might justify increasing levels of bombing despite international involvement?",
+        "Could there be unintended consequences of ceasing bombing operations immediately?",
+        "Are there alternative strategies to achieve security goals without relying solely on bombing?"
+      ]
+    },
+    {
+      "arg_index": 7,
+      "questions": [
+        "What evidence do you have that private entities will always make better decisions than governments?",
+        "Could there be situations where government involvement is actually necessary despite its flaws?",
+        "Are there any documented cases where privatizing government functions led to positive outcomes?"
+      ]
+    },
+    {
+      "arg_index": 8,
+      "questions": [
+        "What other factors could explain the correlation between deficit spending and stock market performance?",
+        "Could there be a time lag between deficit spending and changes in stock market performance?",
+        "Is there evidence that wealth was actually transferred from public to private hands during these periods?"
+      ]
+    },
+    {
+      "arg_index": 9,
+      "questions": [
+        "What criteria did the moderators use to determine that 'tranny' was inappropriate?",
+        "Could there be different interpretations of the word 'tranny' depending on context?",
+        "Is there a difference between calling someone a 'tranny' and referring to them as a 'transgender individual'?"
+      ]
+    },
+    {
+      "arg_index": 10,
+      "questions": [
+        "What defines \"mutual profit\" in different historical contexts?",
+        "Could there be situations where empathy contradicts the pursuit of mutual profit?",
+        "Are there historical examples where empathy was central to successful cooperation instead of just mutual profit?"
+      ]
+    },
+    {
+      "arg_index": 11,
+      "questions": [
+        "What criteria define an insult, and how does calling someone 'alt-right' meet those criteria?",
+        "Is there any objective evidence that labeling someone as 'alt-right' is inherently insulting, or is this a subjective judgment?",
+        "Could there be situations where identifying someone as part of the 'alt-right' is necessary for meaningful dialogue, even if it feels offensive?"
+      ]
+    },
+    {
+      "arg_index": 12,
+      "questions": [
+        "What evidence could challenge the idea that all human behavior throughout history has been consistently selfish?",
+        "Could there be alternative explanations for the observed selfishness in history besides claiming it is an inherent trait?",
+        "How might different cultural contexts influence our understanding of what constitutes 'stupid' or 'selfish' behavior?"
+      ]
+    },
+    {
+      "arg_index": 13,
+      "questions": [
+        "What evidence could show that police officers' weights differ significantly from the national average?",
+        "Could there be other factors besides weight that make police officers better at their jobs?",
+        "Is it fair to assume that all police officers are physically fit based on the average weight alone?"
+      ]
+    },
+    {
+      "arg_index": 14,
+      "questions": [
+        "What specific factors could contribute to both car crash deaths and international violence?",
+        "Could the focus on NSA spying distract from more pressing issues in both contexts?",
+        "Are there any studies or statistics that quantify these additional factors in both scenarios?"
+      ]
+    },
+    {
+      "arg_index": 15,
+      "questions": [
+        "What criteria do you use to determine which genders you identify with?",
+        "How might society's current definitions of gender impact your ability to have your identity recognized?",
+        "Could there be alternative explanations for your experiences beyond the binary framework of gender?"
+      ]
+    },
+    {
+      "arg_index": 16,
+      "questions": [
+        "What kind of evidence would truly demonstrate that waiters in upscale restaurants possess greater expertise?",
+        "Could there be situations where repeating information might still serve a valuable purpose in hospitality settings?",
+        "Are there any documented studies comparing the knowledge levels of waiters in different types of establishments?"
+      ]
+    },
+    {
+      "arg_index": 17,
+      "questions": [
+        "What evidence could challenge the idea that these altcoins have no intrinsic value?",
+        "Are there scenarios where the pursuit of profit through altcoins might still contribute positively to the cryptocurrency ecosystem?",
+        "Could the categorization of all non-bitcoin cryptos as purely speculative ignore their potential role in fostering innovation or financial inclusion?"
+      ]
+    },
+    {
+      "arg_index": 18,
+      "questions": [
+        "What evidence could challenge the idea that all fetal abnormalities warrant termination?",
+        "Could there be other interpretations of the medical findings besides immediate termination?",
+        "What ethical frameworks might offer different guidance in such situations?"
+      ]
+    },
+    {
+      "arg_index": 19,
+      "questions": [
+        "What evidence could demonstrate that Native Americans have had meaningful influence over mainstream culture?",
+        "Could there be other reasons besides cultural dominance that explain the current state of mainstream attitudes toward Native Americans?",
+        "Does the argument assume that all members of the dominant culture share the same attitudes toward Native Americans?"
+      ]
+    },
+    {
+      "arg_index": 20,
+      "questions": [
+        "What evidence could show that skin color is a reliable indicator of the n-word's acceptability?",
+        "Could there be situations where the n-word might be used appropriately regardless of skin color?",
+        "Are there other ways to assess the intent behind the n-word besides relying on skin color?"
+      ]
+    },
+    {
+      "arg_index": 21,
+      "questions": [
+        "What evidence could challenge the idea that British colonialism was primarily beneficial?",
+        "Are there other ways to interpret the legacy of British colonialism besides viewing it as predominantly positive?",
+        "Could the benefits attributed to British rule have been achieved without the harms associated with colonialism?"
+      ]
+    },
+    {
+      "arg_index": 22,
+      "questions": [
+        "What evidence could challenge the idea that all people who get tattoos are impulsive?",
+        "Are there situations where getting a tattoo might actually reflect thoughtful decision-making?",
+        "Could the association between tattoos and recklessness be influenced by societal biases rather than actual behavior?"
+      ]
+    },
+    {
+      "arg_index": 23,
+      "questions": [
+        "What defines a \"rational skeptic\" and how does that shape our understanding of the supernatural?",
+        "Could there be objective criteria to determine the likelihood of supernatural existence?",
+        "Are there alternative frameworks besides rational skepticism that might yield different conclusions?"
+      ]
+    },
+    {
+      "arg_index": 24,
+      "questions": [
+        "What specific skills or experiences would make you better equipped to handle an encounter with an attack dog?",
+        "Could there be situations where even a physically fit individual might struggle against an attack dog?",
+        "Are there other factors besides physical strength that contribute significantly to successful defense against an attack dog?"
+      ]
+    },
+    {
+      "arg_index": 25,
+      "questions": [
+        "What evidence could you offer to show that open discourse actually reduces conflict?",
+        "Could there be situations where enforced friendship might still be beneficial despite the drawbacks?",
+        "Are there any limitations to relying solely on open discourse as a method for conflict resolution?"
+      ]
+    },
+    {
+      "arg_index": 26,
+      "questions": [
+        "What specific moral principles are you referring to?",
+        "Can you provide an example of how your moral perspective influences your views?",
+        "Are there alternative moral frameworks that might offer different insights?"
+      ]
+    },
+    {
+      "arg_index": 27,
+      "questions": [
+        "What makes a pen different from a knife in terms of threat level?",
+        "Could the intention behind using a pen versus a knife change the outcome?",
+        "Is there a scenario where a pen could be more dangerous than a knife?"
+      ]
+    },
+    {
+      "arg_index": 28,
+      "questions": [
+        "What evidence could possibly show that 50% of police officers are corrupt?",
+        "Why should I believe that the inability to prove something makes it automatically true?",
+        "Are there other explanations besides corruption for why people might distrust law enforcement?"
+      ]
+    },
+    {
+      "arg_index": 29,
+      "questions": [
+        "What evidence could show that privacy might actually protect individuals from abuse of power?",
+        "Could there be situations where the state's use of force might justify limiting privacy?",
+        "Are there historical examples where lack of privacy led to positive societal changes?"
+      ]
+    },
+    {
+      "arg_index": 30,
+      "questions": [
+        "What specific assumptions did the original poster make that could undermine their argument?",
+        "Could there be alternative explanations for the situations described that don't rely on these assumptions?",
+        "How might the original argument change if we considered additional sources of information or different contexts?"
+      ]
+    },
+    {
+      "arg_index": 31,
+      "questions": [
+        "What defines a person's national identity beyond legal status?",
+        "Could there be situations where acknowledging ethnic heritage strengthens one's national identity?",
+        "Are there historical contexts where claiming multiple identities was necessary for survival or recognition?"
+      ]
+    },
+    {
+      "arg_index": 32,
+      "questions": [
+        "What criteria define \"white fragility,\" and how might these vary depending on cultural or historical context?",
+        "Could there be situations where defensive responses during racial conversations are justified, and if so, under what conditions?",
+        "Are there alternative explanations for the behaviors observed in r/FragileWhiteRedditor besides the concept of white fragility?"
+      ]
+    },
+    {
+      "arg_index": 33,
+      "questions": [
+        "What evidence do you have that treating capital gains equally will actually reduce wealth inequality?",
+        "Are there any unintended consequences to taxing capital gains at the same rate as ordinary income?",
+        "Could there be other ways to achieve fairness in the tax system besides equalizing capital gains and ordinary income?"
+      ]
+    },
+    {
+      "arg_index": 34,
+      "questions": [
+        "What criteria should define success in the space race beyond simply reaching the moon?",
+        "Could there be value in celebrating milestone achievements even if they don't represent the final destination?",
+        "Is the concept of a \"finish line\" in the space race universally agreed upon by all nations involved?"
+      ]
+    },
+    {
+      "arg_index": 35,
+      "questions": [
+        "What evidence could show that school uniforms actually reduce bullying?",
+        "Could there be situations where school uniforms don't address the root causes of bullying?",
+        "Are there other ways to address bullying besides enforcing school uniforms?"
+      ]
+    },
+    {
+      "arg_index": 36,
+      "questions": [
+        "What evidence do you have that treating prostitution like other businesses would effectively prevent exploitation?",
+        "Are there aspects of prostitution that make it fundamentally different from other businesses that need special considerations?",
+        "Could there be unintended consequences of legalizing prostitution even with strict regulations?"
+      ]
+    },
+    {
+      "arg_index": 37,
+      "questions": [
+        "What defines a slur, and how does that affect the interpretation of words like \"illegal\"?",
+        "Could there be situations where using the term \"illegal\" isn't intended as a slur but still harms others?",
+        "Is it fair to assume that all uses of the word \"illegal\" as a slur automatically imply racism, or could there be other motivations at play?"
+      ]
+    },
+    {
+      "arg_index": 38,
+      "questions": [
+        "What other factors might explain your consistent poor academic performance?",
+        "Could there be differences in how teachers or peers perceive your abilities compared to your self-perception?",
+        "Have you considered seeking professional evaluation to explore different possibilities for your academic challenges?"
+      ]
+    },
+    {
+      "arg_index": 39,
+      "questions": [
+        "Is discomfort always equivalent to being annoying?",
+        "Could there be situations where being annoying is justified?",
+        "Does the speaker consider the intent behind the activist's message?"
+      ]
+    },
+    {
+      "arg_index": 40,
+      "questions": [
+        "What criteria could be used to determine if content removal constitutes censorship?",
+        "Could there be situations where removing harmful content might still cross into censorship?",
+        "Are there alternative ways to define \"hateful subs\" that might avoid the false dilemma presented?"
+      ]
+    },
+    {
+      "arg_index": 41,
+      "questions": [
+        "What evidence could challenge the idea that the judiciary's power isn't weakening?",
+        "Could there be other reasons why the court blocked the executive order besides maintaining judicial power?",
+        "Are there historical precedents where similar judicial actions led to changes in the balance of power between branches?"
+      ]
+    },
+    {
+      "arg_index": 42,
+      "questions": [
+        "What could have been done differently to avoid the confusion and perceived attack?",
+        "Could there be another interpretation of the original definition that doesn't involve attacking the speaker?",
+        "How might clarifying the purpose of the discussion have changed the outcome?"
+      ]
+    },
+    {
+      "arg_index": 43,
+      "questions": [
+        "What criteria could define humanity beyond mere biological existence?",
+        "Are there other perspectives besides biological status that determine moral worth?",
+        "Could the decision to legalize abortion depend on different ethical frameworks?"
+      ]
+    },
+    {
+      "arg_index": 44,
+      "questions": [
+        "What evidence could show that the same active ingredient might have different effects in animals versus humans?",
+        "Could there be situations where the same active ingredient leads to different results due to biological differences?",
+        "Does assuming equivalence based solely on shared active ingredients ignore important variables in drug development?"
+      ]
+    },
+    {
+      "arg_index": 45,
+      "questions": [
+        "What criteria define \"worshiping a god\" versus \"worshiping nature,\" and how might these differ culturally?",
+        "Could the distinction between religion and spirituality influence how people perceive the relationship between gods and nature?",
+        "Are there situations where worshiping nature could overlap with traditional forms of worship, challenging the proposed distinction?"
+      ]
+    },
+    {
+      "arg_index": 46,
+      "questions": [
+        "What criteria could objectively determine if someone is motivated by wealth in a relationship?",
+        "Could there be other reasons besides financial gain that might influence a spouse's decision to marry?",
+        "How might different cultural perspectives shape interpretations of financial motives in marriage?"
+      ]
+    },
+    {
+      "arg_index": 47,
+      "questions": [
+        "What criteria could determine whether an automatic judgment about gender is justified?",
+        "Could there be situations where guessing someone's gender might actually be helpful or respectful?",
+        "Are all forms of unconscious bias equally problematic, or are some types of intuition more defensible than others?"
+      ]
+    },
+    {
+      "arg_index": 48,
+      "questions": [
+        "What criteria should determine whether a historical comparison is valid?",
+        "Could the intent and impact of an action significantly affect how we evaluate its morality?",
+        "Are there situations where drawing parallels between different historical events could still be useful despite differences?"
+      ]
+    },
+    {
+      "arg_index": 49,
+      "questions": [
+        "What criteria could determine whether an idea is truly harmful or just controversial?",
+        "Could there be situations where arriving at incorrect conclusions still has positive value?",
+        "Are there ways to encourage independent thinking while maintaining accountability for ideas?"
+      ]
+    },
+    {
+      "arg_index": 50,
+      "questions": [
+        "What if the definition of 'wet' includes situations where water interacts with another substance, even indirectly?",
+        "Could there be scenarios where water could still be described as 'wet' despite not being soaked in another liquid?",
+        "Does the argument assume that all forms of wetness must involve direct contact with a non-water liquid, excluding any internal interactions within water molecules?"
+      ]
+    },
+    {
+      "arg_index": 51,
+      "questions": [
+        "What criteria define transphobia, and could there be situations where someone expresses concern while still being transphobic?",
+        "Could the speaker's intention have been different from their impact, and how might that affect our judgment of their words?",
+        "Are there other ways to address concerns about transphobia without dismissing the identities of trans women?"
+      ]
+    },
+    {
+      "arg_index": 52,
+      "questions": [
+        "What makes you confident that the results of this study apply to younger populations?",
+        "Could there be differences between older adults and younger people that might affect the study's validity?",
+        "Are there any other factors besides age that could influence the responses to these questions?"
+      ]
+    },
+    {
+      "arg_index": 53,
+      "questions": [
+        "What defines \"basic rights\" in the US Constitution and how do they relate to voting?",
+        "Are there documented cases where voters faced obstacles despite having legal rights?",
+        "Could the concept of \"making a difference\" be interpreted differently by different groups?"
+      ]
+    },
+    {
+      "arg_index": 54,
+      "questions": [
+        "What criteria should be used to evaluate the reliability of climate predictions beyond just professional credentials?",
+        "Could there be situations where a non-climate scientist's perspective adds value to public understanding of climate change?",
+        "Is the distinction between \"scientific prediction\" and \"public messaging\" being conflated here, and how might that affect our judgment of accuracy?"
+      ]
+    },
+    {
+      "arg_index": 55,
+      "questions": [
+        "What evidence supports the idea that dysphoria is not influenced by societal definitions?",
+        "Could there be situations where someone experiences dysphoria without identifying as transgender?",
+        "Are there scientific studies that show a direct correlation between biological sex and gender identity?"
+      ]
+    },
+    {
+      "arg_index": 56,
+      "questions": [
+        "What specific aspects of your work in defense technology make you feel morally conflicted?",
+        "Could there be ways to reconcile your desire for technical advancement with your ethical concerns?",
+        "Have you considered how your work might contribute to both national security and humanitarian efforts?"
+      ]
+    },
+    {
+      "arg_index": 57,
+      "questions": [
+        "What alternative methods could be used to evaluate the effectiveness of patent systems?",
+        "Could there be unintended benefits to experimenting with patent policies despite the risks?",
+        "Are there situations where direct experimentation might still be ethically justified?"
+      ]
+    },
+    {
+      "arg_index": 58,
+      "questions": [
+        "What evidence could demonstrate that parents actually bear the majority of childcare costs?",
+        "Could there be situations where a parent is unable to pay for childcare despite wanting to?",
+        "Are there alternative solutions besides requiring parents to always pay for childcare?"
+      ]
+    },
+    {
+      "arg_index": 59,
+      "questions": [
+        "What evidence exists that shifting blame from victims to perpetrators actually reduces sexual violence?",
+        "Could there be unintended consequences of focusing solely on punishing perpetrators while ignoring prevention strategies?",
+        "How might different cultures or communities interpret the idea of holding perpetrators accountable differently?"
+      ]
+    },
+    {
+      "arg_index": 60,
+      "questions": [
+        "What makes the comparison between gender identity and racial identity inappropriate?",
+        "Are there scientific studies that define gender in ways different from biological sex?",
+        "Could the concept of gender include both innate characteristics and social influences?"
+      ]
+    },
+    {
+      "arg_index": 61,
+      "questions": [
+        "What happens if we assume the value of x from one equation carries over to another?",
+        "Can you think of a scenario where carrying over the value of x might actually make sense?",
+        "Is there ever a case where the same variable could have different values in related equations?"
+      ]
+    },
+    {
+      "arg_index": 62,
+      "questions": [
+        "What specific forms of taxation were used to fund public goods before 1913?",
+        "Could you clarify which aspects of public goods were considered taxable at that time?",
+        "Are there other ways to define \"tax\" besides income tax that might have been used historically?"
+      ]
+    },
+    {
+      "arg_index": 63,
+      "questions": [
+        "What evidence exists to show that rehabilitation programs will consistently reduce recidivism over time?",
+        "Could there be unintended consequences of mandating rehabilitation for all offenders?",
+        "Are there alternative solutions that might address the root causes of crime more effectively than rehabilitation?"
+      ]
+    },
+    {
+      "arg_index": 64,
+      "questions": [
+        "What other factors might explain the decline in gun crime besides increased gun ownership?",
+        "Could the rise in gun ownership be correlated with other societal changes that reduce crime?",
+        "Is there any evidence suggesting that higher gun ownership leads to lower rates of violent crime?"
+      ]
+    },
+    {
+      "arg_index": 65,
+      "questions": [
+        "What criteria define a meal versus a snack, and how do they relate to the amount consumed?",
+        "Are there objective measures of nutritional value that could change how we classify food items?",
+        "Could the way people eat nachos (e.g., portion size, toppings) affect their classification as a meal?"
+      ]
+    },
+    {
+      "arg_index": 66,
+      "questions": [
+        "What other factors besides cost might influence the decision to import from Canada?",
+        "Could there be situations where even though Canadian metal is cheaper, it's better to produce domestically?",
+        "Are there any long-term implications of consistently importing manufactured goods that aren't considered in this argument?"
+      ]
+    },
+    {
+      "arg_index": 67,
+      "questions": [
+        "What evidence could show that increasing taxes might actually help reduce money shortages?",
+        "Are there situations where raising taxes could be an appropriate solution to financial challenges?",
+        "Could there be unintended consequences of focusing solely on tax increases as a solution?"
+      ]
+    },
+    {
+      "arg_index": 68,
+      "questions": [
+        "What evidence could demonstrate that China's economic dominance actually makes other nations dependent?",
+        "Could there be scenarios where even strong economic ties don't translate to strategic reliance?",
+        "Are there other factors besides economic power that might make a country strategically vital?"
+      ]
+    },
+    {
+      "arg_index": 69,
+      "questions": [
+        "What criteria determine whether an act constitutes theft versus rape?",
+        "Could there be situations where taking a car without consent is not considered theft?",
+        "Does the argument assume that all forms of non-consensual sex should be treated identically to theft?"
+      ]
+    },
+    {
+      "arg_index": 70,
+      "questions": [
+        "What happens when new evidence contradicts previously accepted scientific theories?",
+        "Could there be aspects of reality that remain beyond the scope of scientific investigation?",
+        "How should society balance confidence in scientific findings with recognition of their provisional nature?"
+      ]
+    },
+    {
+      "arg_index": 71,
+      "questions": [
+        "What ethical principles could justify forcing women to sacrifice their bodily autonomy in certain life-or-death scenarios?",
+        "Could there be documented historical or contemporary examples where women were compelled to sacrifice their health for another's survival?",
+        "Is the argument assuming that all forms of bodily autonomy are equally valuable regardless of context, or are there exceptions?"
+      ]
+    },
+    {
+      "arg_index": 72,
+      "questions": [
+        "What defines \"faith\" in this context, and how might different interpretations affect the validity of the argument?",
+        "Could there be other explanations for why someone might believe they know everything besides placing faith in themselves?",
+        "Does the argument assume that all forms of belief must be rooted in divine authority, or could secular philosophies offer similar justifications for self-trust?"
+      ]
+    },
+    {
+      "arg_index": 73,
+      "questions": [
+        "What role do our biological needs play in determining the morality of our diet?",
+        "Could there be situations where the ethical treatment of animals doesn't align with personal dietary choices?",
+        "Are there other ethical considerations besides animal welfare that should influence our dietary decisions?"
+      ]
+    },
+    {
+      "arg_index": 74,
+      "questions": [
+        "What evidence could show that attempted suicide might still have serious consequences?",
+        "Could there be other reasons besides gender that explain higher rates of attempted suicide among women?",
+        "Is comparing attempted suicide to completed suicide helpful in understanding mental health issues?"
+      ]
+    },
+    {
+      "arg_index": 75,
+      "questions": [
+        "What criteria define \"earning respect,\" and how might these vary between cultures?",
+        "Are there situations where automatic respect for elders could have positive social effects?",
+        "Does the argument assume that all societies treat elders with equal levels of respect?"
+      ]
+    },
+    {
+      "arg_index": 76,
+      "questions": [
+        "What role did historical colonialism play in shaping current attitudes toward cultural expressions?",
+        "Could there be situations where adopting elements of another culture could still be harmful even if done with good intentions?",
+        "Are there ways to appreciate cultural elements without appropriating them, and how might those boundaries be defined?"
+      ]
+    },
+    {
+      "arg_index": 77,
+      "questions": [
+        "What defines \"faith\" in this context, and how might different interpretations affect the validity of the claim?",
+        "Could there be situations where faith is not required, and how would that challenge the generalization?",
+        "Are there alternative ways to interpret the relationship between faith and scientific inquiry that the argument overlooks?"
+      ]
+    },
+    {
+      "arg_index": 78,
+      "questions": [
+        "What evidence could challenge the idea that natural differences determine athletic ability or career choice?",
+        "Could there be other explanations for why women might choose different careers besides innate biological differences?",
+        "How might the concept of equality impact the interpretation of these supposed natural differences?"
+      ]
+    },
+    {
+      "arg_index": 79,
+      "questions": [
+        "What criteria define \"protection\" in the context of vaccines, and how might different groups interpret this differently?",
+        "Could there be scenarios where individual benefits of vaccination outweigh collective protection, and how should these be measured?",
+        "Are there alternative explanations for low vaccination rates besides individualism, and how might they affect public health strategies?"
+      ]
+    },
+    {
+      "arg_index": 80,
+      "questions": [
+        "What evidence supports the idea that prioritizing profit always leads to sustainable outcomes?",
+        "Could there be situations where meeting public needs actually enhances long-term profitability?",
+        "Is there a risk that focusing solely on profit might distort our understanding of what sustainability truly means?"
+      ]
+    },
+    {
+      "arg_index": 81,
+      "questions": [
+        "What evidence could help us better understand how different cultures perceive body odors?",
+        "Could there be biological differences in human olfaction that affect our ability to detect race-related scents?",
+        "Are there situations where scent might still play an unintentional role in stereotyping beyond race?"
+      ]
+    },
+    {
+      "arg_index": 82,
+      "questions": [
+        "What evidence could demonstrate that personal property is not merely a product of oppression?",
+        "Could there be situations where property rights actually promote freedom instead of domination?",
+        "Are there historical or contemporary examples where property was established without violence or propaganda?"
+      ]
+    },
+    {
+      "arg_index": 83,
+      "questions": [
+        "What evidence could be presented to show that the legal system treats wealthy individuals differently than others?",
+        "Could there be other explanations for why these individuals were not prosecuted despite allegations?",
+        "Is it fair to generalize the behavior of a small number of high-profile individuals to an entire class of wealthy people?"
+      ]
+    },
+    {
+      "arg_index": 84,
+      "questions": [
+        "What criteria could be used to define \"fair competition\" beyond just biological sex?",
+        "Are there established methods to objectively assess athletic advantages related to biology?",
+        "Could there be other ways to ensure fairness besides excluding athletes based on birth sex?"
+      ]
+    },
+    {
+      "arg_index": 85,
+      "questions": [
+        "What criteria define bioterrorism and how does throwing a party during a pandemic meet those criteria?",
+        "Are there documented cases where large gatherings during pandemics have been classified as acts of terrorism?",
+        "Could the term 'bioterrorism' be being misused here to justify authoritarian control over personal freedoms?"
+      ]
+    },
+    {
+      "arg_index": 86,
+      "questions": [
+        "What criteria could be used to evaluate whether a character portrayal is racially sensitive?",
+        "Could there be situations where certain characters should be restricted based on player demographics?",
+        "How might different communities interpret the concept of \"acceptable representation\" in gaming?"
+      ]
+    },
+    {
+      "arg_index": 87,
+      "questions": [
+        "What defines a \"better person\" and how does that relate to the concept of redemption?",
+        "Could there be circumstances where even in hell, individuals might still find ways to seek redemption?",
+        "Is the idea that people in hell are permanently incapable of change supported by religious texts or philosophical traditions?"
+      ]
+    },
+    {
+      "arg_index": 88,
+      "questions": [
+        "What criteria define something as \"meaningful,\" and how might these differ between individuals?",
+        "Could there be situations where the impermanence of enjoyment actually leads to greater appreciation and thus meaning?",
+        "Are there cultural or historical contexts where the impermanence of enjoyment is seen differently, and how might that affect our understanding of meaning?"
+      ]
+    },
+    {
+      "arg_index": 89,
+      "questions": [
+        "What criteria define \"fair use,\" and how might these differ from the author's understanding?",
+        "Could there be other motivations for pursuing copyright infringement cases besides financial gain?",
+        "Does the absence of financial motivation always equate to an increase in creative freedom, or could it have unintended consequences?"
+      ]
+    },
+    {
+      "arg_index": 90,
+      "questions": [
+        "What specific definitions of \"success\" were used in these infographics?",
+        "Could there be different ways to measure success that might change this conclusion?",
+        "Are there other factors besides geography that could explain differences in success metrics?"
+      ]
+    },
+    {
+      "arg_index": 91,
+      "questions": [
+        "What evidence supports the idea that men should always take paternity tests?",
+        "Are there situations where a man might not want to take a paternity test even if he believes he is the biological father?",
+        "Could there be unintended consequences if society pressures men to take paternity tests regardless of circumstances?"
+      ]
+    },
+    {
+      "arg_index": 92,
+      "questions": [
+        "What makes you believe that the current global pandemic provides a unique justification for misunderstanding?",
+        "Is there any evidence that people actually fail to understand the world's condition during a pandemic?",
+        "Could the same level of misunderstanding occur in non-pandemic times, and how might that affect your argument?"
+      ]
+    },
+    {
+      "arg_index": 93,
+      "questions": [
+        "What evidence do you have that remaining a virgin at 16 guarantees parental happiness?",
+        "Are there situations where a teenager might prefer not to remain a virgin despite parental expectations?",
+        "Could there be other reasons why people value virginity beyond just parental satisfaction?"
+      ]
+    },
+    {
+      "arg_index": 94,
+      "questions": [
+        "What criteria could we use to determine if something is truly objective?",
+        "Could there be situations where subjectivity is actually necessary for understanding complex issues?",
+        "Are there limits to how much we can separate our personal experiences from our perception of reality?"
+      ]
+    },
+    {
+      "arg_index": 95,
+      "questions": [
+        "What defines \"strength\" in different contexts, and how might these definitions affect the comparison between deadlifting and running?",
+        "Could there be other factors besides physical strength that contribute to running a four-minute mile, such as endurance or cardiovascular health?",
+        "Is there a possibility that individuals who excel at deadlifting may have strengths in other areas that aren't captured by traditional measures of strength?"
+      ]
+    },
+    {
+      "arg_index": 96,
+      "questions": [
+        "What criteria could be used to determine if animals have the same moral standing as humans?",
+        "Are there fundamental differences between humans and animals that might justify different treatments?",
+        "Could there be situations where treating animals equally with humans leads to unintended negative consequences?"
+      ]
+    },
+    {
+      "arg_index": 97,
+      "questions": [
+        "What criteria could be used to determine if a conviction was truly based on reliable evidence?",
+        "Could there be other explanations for the existence of wrongful convictions besides flaws in the criminal justice system?",
+        "Is the fact that innocent people have been wrongfully imprisoned a valid reason to abolish the death penalty, or might it simply indicate a flaw in our current justice system that needs reform rather than replacement?"
+      ]
+    },
+    {
+      "arg_index": 98,
+      "questions": [
+        "What definitions of peace could change the necessity of a healthcare monopoly?",
+        "Could peaceful societies exist without a healthcare monopoly, and how might that look?",
+        "Is the assumption that a healthcare monopoly leads to peace supported by empirical evidence?"
+      ]
+    },
+    {
+      "arg_index": 99,
+      "questions": [
+        "What criteria determine whether an ideological belief justifies physical confrontation?",
+        "Could there be situations where punching a Nazi might not be considered self-defense?",
+        "Does equating ideology with imminent danger ignore the distinction between beliefs and actions?"
+      ]
+    },
+    {
+      "arg_index": 100,
+      "questions": [
+        "What criteria could be used to determine whether killing an animal is inherently unethical?",
+        "Are there any scientific studies that show how humans perceive the ethics of killing animals?",
+        "Could cultural differences significantly influence our understanding of what is ethically acceptable?"
+      ]
+    },
+    {
+      "arg_index": 101,
+      "questions": [
+        "What other factors besides scarcity could contribute to the value of land?",
+        "Could the statement \"Scarcity is only part of the value of land\" be interpreted differently?",
+        "Are there situations where scarcity might not affect land value at all?"
+      ]
+    },
+    {
+      "arg_index": 102,
+      "questions": [
+        "What criteria define something as \"true\" in science versus theology?",
+        "Can scientific methodologies adequately capture subjective experiences of the divine?",
+        "Are there philosophical or methodological distinctions between natural and supernatural explanations that should influence this approach?"
+      ]
+    },
+    {
+      "arg_index": 103,
+      "questions": [
+        "What evidence could show that handwriting still has value in academic settings?",
+        "Could there be situations where handwriting might actually enhance academic performance?",
+        "Are there valid reasons beyond fairness that justify requiring handwritten work in education?"
+      ]
+    },
+    {
+      "arg_index": 104,
+      "questions": [
+        "What specific historical events or intentions justify drawing a parallel between the treatment of the Trump administration and Nazi Germany?",
+        "Could there be situations where comparing political figures to historical villains might still be justified despite the risk of hyperbole?",
+        "Are there other factors besides historical parallels that should influence our evaluation of political leadership conduct?"
+      ]
+    },
+    {
+      "arg_index": 105,
+      "questions": [
+        "What evidence supports the idea that people always learn from past mistakes?",
+        "Could there be situations where observing failure doesn't lead to wiser choices?",
+        "Is it reasonable to assume that everyone has equal access to accurate information during crises?"
+      ]
+    },
+    {
+      "arg_index": 106,
+      "questions": [
+        "What happens if people find ways to bypass the waiting period?",
+        "Could the existence of black markets undermine the effectiveness of this measure?",
+        "Is there evidence that such waiting periods actually reduce violent incidents?"
+      ]
+    },
+    {
+      "arg_index": 107,
+      "questions": [
+        "What evidence could challenge the idea that avoiding thoughts of death is always debilitating?",
+        "Could there be situations where focusing on death might actually improve decision-making?",
+        "Are there cultures or belief systems that demonstrate different approaches to dealing with mortality?"
+      ]
+    },
+    {
+      "arg_index": 108,
+      "questions": [
+        "What evidence do you have that larger individuals currently fly less frequently?",
+        "Could there be other reasons why larger individuals might choose to fly less besides physical discomfort?",
+        "Is there any research suggesting that people who are overweight tend to fly more often when restrictions are lifted?"
+      ]
+    },
+    {
+      "arg_index": 109,
+      "questions": [
+        "What criteria define a culture as harmful, and how were these applied specifically to black American culture?",
+        "Could there be different interpretations of what constitutes 'harm' within cultural contexts, and how might those differ from personal biases?",
+        "How might considering the historical and social contributions of black American culture challenge the notion that it is inherently harmful?"
+      ]
+    },
+    {
+      "arg_index": 110,
+      "questions": [
+        "What criteria would determine which issues are considered \"hot button\" and thus warrant limited federal involvement?",
+        "Could there be situations where these hot button issues actually require stronger federal oversight instead of limitation?",
+        "Are there existing legal frameworks or precedents that could guide how to appropriately limit federal authority on such matters?"
+      ]
+    },
+    {
+      "arg_index": 111,
+      "questions": [
+        "What evidence do you have that I am dismissing your point without reason?",
+        "Could there be other reasons for your dismissive attitude besides bad faith?",
+        "How might understanding the context of our conversation change how you interpret my actions?"
+      ]
+    },
+    {
+      "arg_index": 112,
+      "questions": [
+        "What criteria could be used to determine which interpretation corresponds to reality?",
+        "Could there be situations where multiple interpretations all correspond to different aspects of reality?",
+        "Are there forms of knowledge that don't rely on direct correspondence with an external reality?"
+      ]
+    },
+    {
+      "arg_index": 113,
+      "questions": [
+        "What defines \"illegal income,\" and how does that affect the legality of reporting it?",
+        "Does the IRS have any rules about reporting false information, and how might they impact this claim?",
+        "Could there be situations where filing illegal income could actually violate other laws, such as fraud?"
+      ]
+    },
+    {
+      "arg_index": 114,
+      "questions": [
+        "What evidence do you have that disarming law-abiding citizens would prevent crimes?",
+        "Are there alternative explanations for violent incidents besides gun ownership?",
+        "Could disarming civilians create new vulnerabilities that criminals might exploit?"
+      ]
+    },
+    {
+      "arg_index": 115,
+      "questions": [
+        "What if society could ensure everyone's basic needs were met without requiring people to work?",
+        "Could there be situations where not working is actually more ethical than working?",
+        "Does the fact that work is necessary mean it should be treated as inherently virtuous?"
+      ]
+    },
+    {
+      "arg_index": 116,
+      "questions": [
+        "What specific challenges do single parents face that might differ from those experienced by married parents?",
+        "Could there be other factors besides being a single parent that contribute to the difficulties mentioned?",
+        "How might the perspectives of other types of caregivers influence our understanding of parenting challenges?"
+      ]
+    },
+    {
+      "arg_index": 117,
+      "questions": [
+        "What criteria did you use to determine that the quality of life in Europe is objectively better?",
+        "Could there be factors unique to your personal circumstances that influence your perception of quality of life?",
+        "Are there aspects of American culture or lifestyle that might contribute to a different evaluation of quality of life?"
+      ]
+    },
+    {
+      "arg_index": 118,
+      "questions": [
+        "What criteria define life, and how might these differ from the perspective of biology versus philosophy?",
+        "Could the argument's logic be applied consistently to other scenarios where life transitions occur, such as miscarriage or stem cell research?",
+        "Are there alternative viewpoints within religious traditions that may offer different frameworks for understanding when life begins?"
+      ]
+    },
+    {
+      "arg_index": 119,
+      "questions": [
+        "What evidence exists beyond common understanding to prove that law enforcement failure equates to anarchy?",
+        "Could there be scenarios where law enforcement is absent yet society still functions democratically?",
+        "Are there historical examples where strong law enforcement did not result in a stable democracy?"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,964 @@
+{
+  "results": [
+    {
+      "arg_index": 0,
+      "questions": [
+        "What exactly counts as a “secular one,” and are Communism and Marxism representative of all secular systems?",
+        "What evidence shows that Communism or Marxism failed specifically because they were anti-religious, rather than because of other factors like authoritarianism or economic policy?",
+        "Would examples of successful secular democracies weaken the conclusion that “secular ones fail”?"
+      ]
+    },
+    {
+      "arg_index": 1,
+      "questions": [
+        "What evidence would show that the historical connection between slurs and violence still shapes how these words are experienced today?",
+        "Are the examples of “beatings” and “deaths” meant to show that slurs cause violence, accompany violence, or symbolize a broader system of oppression?",
+        "How might context, intent, or power dynamics affect whether a slur is interpreted as threatening or harmful?"
+      ]
+    },
+    {
+      "arg_index": 2,
+      "questions": [
+        "What evidence shows that states-rights concerns are one of the main reasons the Electoral College has not been abolished, rather than just one concern among many?",
+        "What specific reasons would make a regional Electoral College better than the current Electoral College or a national popular vote?",
+        "Could constitutional difficulty, partisan incentives, or small-state influence explain resistance to abolishing the Electoral College more than “obsession w states rights”?"
+      ]
+    },
+    {
+      "arg_index": 3,
+      "questions": [
+        "What specific evidence would show whether protests are or are not related to Trump’s or Obama’s actions as president?",
+        "When you say “Trump has before he was president,” what exactly did Trump do or experience, and how does that support the conclusion?",
+        "Does the fact that protests occurred before and during Trump’s presidency prove that current protests “show nothing,” or could protests still reflect reactions to particular policies or actions?"
+      ]
+    },
+    {
+      "arg_index": 4,
+      "questions": [
+        "What specific teachings of Jesus would show that he was or was not a “radical leftist”?",
+        "If conservatives ignore many of Jesus’ teachings, how does that support the conclusion that Jesus was not a radical leftist rather than simply not conservative?",
+        "Are modern political categories like “radical leftist” appropriate for interpreting a religious figure from an ancient historical context?"
+      ]
+    },
+    {
+      "arg_index": 5,
+      "questions": [
+        "What evidence shows that the people being criticized actually want to stop vetting, rather than change how immigration vetting works?",
+        "Does the fact that a policy has existed “since we’ve been a country” prove that the current version of that policy is effective or justified today?",
+        "Could the argument be misrepresenting immigration reform positions by equating reform with “stop vetting”?"
+      ]
+    },
+    {
+      "arg_index": 6,
+      "questions": [
+        "What evidence shows that the current bombing campaign is actually near its maximum possible level?",
+        "Does the fact that the US, France, and others are involved prove that bombing cannot be expanded, or could involvement still vary in scale and intensity?",
+        "Are there other relevant factors—such as available targets, legal limits, military goals, or civilian risks—that matter more than simply who is involved?"
+      ]
+    },
+    {
+      "arg_index": 7,
+      "questions": [
+        "What specific argument is being rejected, and what does “it” refer to in this context?",
+        "What evidence shows that “the government ducks everything up,” rather than failing in some cases and succeeding in others?",
+        "Does the claim assume too quickly that government failure is universal, and what counterexamples might challenge that assumption?"
+      ]
+    },
+    {
+      "arg_index": 8,
+      "questions": [
+        "What evidence would show that deficit spending directly caused the stock market rise rather than merely occurring at the same time?",
+        "What mechanism explains how budget deficits and national debt transfer wealth from public hands to private stock-market investors?",
+        "Could other factors, such as monetary policy, corporate earnings, or interest rates, better explain the stock market’s performance?"
+      ]
+    },
+    {
+      "arg_index": 9,
+      "questions": [
+        "What evidence beyond one Reddit thread would show whether the term is widely understood as a slur?",
+        "Could the post have been removed not because of disagreement with your story, but because subreddit rules prohibit slurs or dehumanizing language?",
+        "How does describing a trans person as having “trapped and deceived” you affect whether readers interpret the post as biased or hostile?"
+      ]
+    },
+    {
+      "arg_index": 10,
+      "questions": [
+        "What historical evidence would show that the “entire history of humans” is best explained by people forming larger groups for mutual profit?",
+        "Could humans have formed larger groups for reasons other than mutual profit, such as fear, coercion, survival, or power?",
+        "If empathy is being questioned, how would the argument distinguish cooperation based on empathy from cooperation based only on self-interest or profit?"
+      ]
+    },
+    {
+      "arg_index": 11,
+      "questions": [
+        "What evidence shows that the other person, rather than both participants, caused the conversation to stop being substantive?",
+        "Does calling someone “alt-right” always imply that the person is evil, or could it be intended as a political description?",
+        "Could the conversation being “far off track” have been caused by misunderstanding, topic complexity, or mutual escalation rather than by the other person’s failure?"
+      ]
+    },
+    {
+      "arg_index": 12,
+      "questions": [
+        "What specific viewpoint were you responding to, and how does human history directly refute it?",
+        "Which examples from human history best support your conclusion, and are they representative of humanity as a whole?",
+        "Could focusing only on “stupid selfish things” overlook historical examples of cooperation, sacrifice, or moral progress?"
+      ]
+    },
+    {
+      "arg_index": 13,
+      "questions": [
+        "What evidence shows that “many, probably most” male police officers regularly go to the gym?",
+        "Even if police officers and average US males have the same average weight, what data would be needed to compare their actual strength?",
+        "Does going to the gym necessarily mean someone is stronger than the average sedentary adult, or could frequency, training type, age, and body composition change that conclusion?"
+      ]
+    },
+    {
+      "arg_index": 14,
+      "questions": [
+        "What evidence shows that NSA spying is only one factor, rather than a major or decisive factor, in international violence and terrorism?",
+        "How closely does the comparison between car-crash deaths and international violence actually fit, and where might the analogy break down?",
+        "If many factors contribute to terrorism, does that reduce responsibility for NSA spying, or can one factor still deserve special criticism?"
+      ]
+    },
+    {
+      "arg_index": 15,
+      "questions": [
+        "What evidence or explanation would clarify the claim that you were “artificially assigned male at birth by force with the use of stem cells”?",
+        "What do you mean by “four of the sexes,” and how are those categories being defined?",
+        "Could there be another explanation for the birth-assignment experience that does not involve stem cells?"
+      ]
+    },
+    {
+      "arg_index": 16,
+      "questions": [
+        "What evidence would be sufficient to substantiate the claim that waiters in higher-end restaurants know their menus and alcohol pairings better?",
+        "How do we know the other person only repeated the claim rather than providing evidence elsewhere in the discussion?",
+        "Could the claim about high-end restaurant waiters still be true even if the person arguing for it has not proven it well?"
+      ]
+    },
+    {
+      "arg_index": 17,
+      "questions": [
+        "What evidence shows that “most altcoins,” rather than only certain meme or scam coins, are mainly bought for speculation?",
+        "How do you know that people “only buy” these coins to make money, rather than for community, ideology, experimentation, or entertainment?",
+        "Are squid game coin, shiba inu, and dogecoin representative enough to justify a conclusion about most altcoins?"
+      ]
+    },
+    {
+      "arg_index": 18,
+      "questions": [
+        "What exactly is the belief being defended here—is it that abortion is always wrong, that abortion for fetal abnormality is wrong, or that doctors can sometimes be mistaken?",
+        "How much can one personal prenatal case prove about whether abortion recommendations are generally justified or unjustified?",
+        "What additional evidence would be needed to move from this individual experience to a broader moral or policy claim about abortion?"
+      ]
+    },
+    {
+      "arg_index": 19,
+      "questions": [
+        "What evidence shows that being part of the dominant culture actually causes or strengthens the “blasé attitude,” rather than merely coinciding with it?",
+        "Does the claim that Native Americans could not erase or damage mainstream American culture prove that mainstream culture members feel secure or indifferent?",
+        "Could other factors—such as individual ideology, education, media narratives, or historical context—better explain the blasé attitude than dominant-culture membership alone?"
+      ]
+    },
+    {
+      "arg_index": 20,
+      "questions": [
+        "What specific kind of context, beyond skin color, would be necessary to judge whether the use of the n-word is acceptable?",
+        "If two people use the word with the exact same intention, why should speaker identity alone change whether the act is acceptable?",
+        "Does looking at someone’s skin color actually reveal their intention, or does it risk assuming causation between identity and meaning?"
+      ]
+    },
+    {
+      "arg_index": 21,
+      "questions": [
+        "What evidence would show that the benefits of British colonialism outweighed its harms overall?",
+        "How do we know that British colonialism, rather than other political, economic, or cultural forces, caused the spread of liberalism in the West?",
+        "Is citing “spread knowledge” and “rooted liberalism” enough to conclude that British colonialism was a net good, or does that generalize too broadly from limited examples?"
+      ]
+    },
+    {
+      "arg_index": 22,
+      "questions": [
+        "What evidence shows that people with tattoos are actually more impulsive or self-indulgent, rather than merely stereotyped that way?",
+        "Even if some tattoos are chosen impulsively, does that justify a general parental ban on tattoos for all kids?",
+        "Could tattoos also reflect culture, identity, memory, or artistic expression rather than “living life by the edge”?"
+      ]
+    },
+    {
+      "arg_index": 23,
+      "questions": [
+        "What standard of evidence would make agnosticism more reasonable than simply judging their existence extremely unlikely?",
+        "Does the fact that something is \"not impossible\" provide enough reason to suspend final judgment, or are many unlikely things not impossible?",
+        "How would your reasoning change if stronger evidence showed that their existence was merely logically possible but practically unsupported?"
+      ]
+    },
+    {
+      "arg_index": 24,
+      "questions": [
+        "What specific evidence shows that being 6'1 and 205 pounds would be enough to overcome a trained attack dog in a real attack?",
+        "How similar are attack dog training videos to the fear, speed, pain, and unpredictability of an actual dog attack?",
+        "Are you drawing too strong a conclusion from limited observation, and what kind of real-world evidence would make the claim more reliable?"
+      ]
+    },
+    {
+      "arg_index": 25,
+      "questions": [
+        "What specific practices would “opening up public discourse” require beyond simply saying people should talk more?",
+        "How do we know the opposing view really assumed the author wanted “everyone to be friends,” rather than raising a different concern about discourse?",
+        "If public discourse does not require friendship, what conditions—such as trust, rules, or power balance—are still necessary for it to be productive?"
+      ]
+    },
+    {
+      "arg_index": 26,
+      "questions": [
+        "What specific phrase do you think was wrong, and how would you rephrase it to better express your moral perspective?",
+        "Why does arguing from a moral perspective explain or justify the phrasing problem?",
+        "Could the issue be not just phrasing, but disagreement about the moral assumptions behind the argument?"
+      ]
+    },
+    {
+      "arg_index": 27,
+      "questions": [
+        "What exactly does “stopped just as easily” mean, and how would you measure whether stopping someone with a pen, sharpie, or knife is equally difficult?",
+        "What evidence supports the claim that stopping someone with a pen would be hard in the same way as stopping someone with a knife?",
+        "Even if there is no obvious formal fallacy, could the argument still rely on a weak comparison between a pen, sharpie, and knife?"
+      ]
+    },
+    {
+      "arg_index": 28,
+      "questions": [
+        "What evidence would be sufficient to support or reject the claim that “50% of cops are bad”?",
+        "Where does the figure “400,000 individuals” come from, and is it accurate?",
+        "Does pointing out the burden of proof address whether the original claim might still be true, or only whether it has been proven?"
+      ]
+    },
+    {
+      "arg_index": 29,
+      "questions": [
+        "What specific harms make privacy \"fundamentally bad,\" and do those harms apply to all forms of privacy?",
+        "How does the fact that the state is a special case because it can use legitimate force support the broader claim that privacy is bad for people generally?",
+        "Are there examples where privacy protects autonomy, safety, or dignity, and would those cases challenge the claim that privacy is generally bad?"
+      ]
+    },
+    {
+      "arg_index": 30,
+      "questions": [
+        "Which specific assumptions in OP’s argument are necessary for the argument to work, and why does removing them make the whole argument fail?",
+        "What evidence shows that these assumptions are only “guesses” rather than reasonable inferences or supported possibilities?",
+        "Could OP’s argument still be partly valid even if some assumptions are uncertain, or does it truly “fall apart” completely?"
+      ]
+    },
+    {
+      "arg_index": 31,
+      "questions": [
+        "Does identifying with ancestry necessarily mean someone is “claiming to be something they aren’t,” or can ancestry be one part of a person’s identity?",
+        "Is your personal choice not to call yourself “European American” enough evidence to conclude that others should avoid similar identity labels?",
+        "What other ways might someone understand identity besides citizenship alone, such as family history, culture, ethnicity, or community?"
+      ]
+    },
+    {
+      "arg_index": 32,
+      "questions": [
+        "What evidence from the subreddit itself shows that it is actually about “white fragility,” rather than another related topic?",
+        "How do we know the definition of “white fragility” given here is accurate and not oversimplified?",
+        "Could describing “white people’s discomfort” too broadly risk stereotyping, and how might the claim be made more precise?"
+      ]
+    },
+    {
+      "arg_index": 33,
+      "questions": [
+        "What evidence shows that treating capital gains the same as ordinary income would produce better fiscal or economic outcomes?",
+        "How do the current tax code debates specifically justify returning to equal treatment of capital gains and ordinary income?",
+        "What assumptions are being made about fairness, investment incentives, and government revenue when arguing for this tax change?"
+      ]
+    },
+    {
+      "arg_index": 34,
+      "questions": [
+        "What evidence shows that a manned moon landing was universally understood as the “finish line” of the space race?",
+        "If earlier achievements like the first satellite or first human in space were “mile markers,” why should they matter less than the moon landing?",
+        "Does comparing the space race to a literal race oversimplify a historical competition with multiple scientific, political, and symbolic goals?"
+      ]
+    },
+    {
+      "arg_index": 35,
+      "questions": [
+        "What evidence shows that requiring school uniforms actually reduces bullying about clothing or poverty?",
+        "If uniforms are uncomfortable, what makes the reduction in bullying more important than students’ comfort?",
+        "Could students still be bullied for other signs of poverty, such as shoes, bags, phones, or social status, even if everyone wears the same uniform?"
+      ]
+    },
+    {
+      "arg_index": 36,
+      "questions": [
+        "What evidence shows that the government is actually “failing to do so” in this context?",
+        "If prostitution and brothels were legalized, what specific licensing and inspection system is being assumed, and who would enforce it?",
+        "Could the problem be poor enforcement design or lack of funding rather than legalization itself?"
+      ]
+    },
+    {
+      "arg_index": 37,
+      "questions": [
+        "What evidence shows that using \"illegal\" as a noun is always or primarily a slur rather than an imprecise or contested usage?",
+        "Does using a slur necessarily mean people will reasonably conclude the speaker is racist, or could intent, context, and awareness matter?",
+        "In what contexts, if any, might the argument apply only to derogatory noun usage rather than all uses of the word \"illegal\"?"
+      ]
+    },
+    {
+      "arg_index": 38,
+      "questions": [
+        "What evidence besides poor grades would be needed to determine whether an intellectual disorder is actually present?",
+        "Could difficulty grasping concepts have other explanations, such as teaching style, anxiety, ADHD, lack of support, or an undiagnosed learning disability?",
+        "Does doing poorly academically necessarily show an intellectual disorder, or could the connection between the two be unsupported?"
+      ]
+    },
+    {
+      "arg_index": 39,
+      "questions": [
+        "What evidence would show that activists are annoying “no matter what cause they stand for,” rather than only in some cases or to some audiences?",
+        "Why should the discomfort caused by demands for change be interpreted as activists being annoying, rather than as a normal reaction to confronting injustice?",
+        "If speaking up makes someone “annoying,” what positive or negative effects might that label have on whether people listen to the injustice being raised?"
+      ]
+    },
+    {
+      "arg_index": 40,
+      "questions": [
+        "What clear principle separates \"cutting hateful subs out of reddit\" from \"actual censorship\"?",
+        "How should \"hateful subs\" be defined so that removal decisions are not based only on subjective disagreement?",
+        "Are critics really arguing that subreddit removal leads to \"nerve stapling everyone who disagrees,\" or is that an exaggeration of their concern?"
+      ]
+    },
+    {
+      "arg_index": 41,
+      "questions": [
+        "Does one blocked executive order prove that the judiciary’s overall power is “not being weakened at all”?",
+        "What additional evidence would show whether the courts remain independent beyond this one temporary block being upheld?",
+        "Could the claim rely on a hasty generalization by treating one judicial success as proof that no weakening is occurring?"
+      ]
+    },
+    {
+      "arg_index": 42,
+      "questions": [
+        "What evidence shows that the second-person address was meant to refer to you personally rather than to a hypothetical or generalized person?",
+        "Could the feeling of being attacked come from the ambiguity of the wording rather than from the other person actually attacking you?",
+        "What additional context from the prior conversation would help distinguish between miscommunication, criticism, and personal attack?"
+      ]
+    },
+    {
+      "arg_index": 43,
+      "questions": [
+        "What definition of “human” or “person” is being used to support the claim that abortions should be legal?",
+        "Even if the fetus is described as “a bundle of cells,” what additional legal or moral principle is needed to show that abortion should therefore be legal?",
+        "Are there other factors, such as bodily autonomy, fetal viability, or maternal health, that might matter more than whether the fetus is currently considered human?"
+      ]
+    },
+    {
+      "arg_index": 44,
+      "questions": [
+        "If the dose and approved clinical applications differ, in what sense are the animal and human versions “absolutely the same”?",
+        "Is having the same active pharmaceutical ingredient enough to prove that two products have the same safety, formulation, excipients, and quality standards?",
+        "Does “often times produced at the same facility” justify a general claim about all animal and human versions, or does it risk generalizing too broadly?"
+      ]
+    },
+    {
+      "arg_index": 45,
+      "questions": [
+        "What definitions of “religion” and “spirituality” are being used, and do they clearly show that the two are different?",
+        "Why should the difference between worshiping a god and worshiping nature prove a difference between religion and spirituality?",
+        "Are religion and spirituality limited only to worshiping a god versus worshiping nature, or are there other possibilities?"
+      ]
+    },
+    {
+      "arg_index": 46,
+      "questions": [
+        "What evidence shows that he truly did not marry you for money, beyond your belief about his intentions?",
+        "Is “not marrying for money” enough by itself to prove someone is not a gold digger, or could later financial behavior also matter?",
+        "How might personal attachment to your husband affect your judgment of his motives?"
+      ]
+    },
+    {
+      "arg_index": 47,
+      "questions": [
+        "Does saying something is “human instinct” mean it is acceptable or should go unchallenged?",
+        "What evidence shows that assuming gender specifically is the same as the general tendency to judge people quickly?",
+        "How might accepting this argument affect people who are misgendered or stereotyped?"
+      ]
+    },
+    {
+      "arg_index": 48,
+      "questions": [
+        "What specific comparison is being criticized, and does it actually equate immigration with “invasion and genocide,” or is it making a narrower historical analogy?",
+        "What assumptions must be true for “immigration” to be clearly separable from “invasion and genocide” in this context?",
+        "Could some forms of migration involve coercion, displacement, or state-backed violence, and if so, how would that affect the author’s claim?"
+      ]
+    },
+    {
+      "arg_index": 49,
+      "questions": [
+        "What evidence shows that conclusions “similar to mine” are more true or less harmful than other independently reached conclusions?",
+        "Is thinking for oneself valuable only because of the final conclusion, or can the reasoning process itself have value even when someone makes mistakes?",
+        "Does the argument create a false choice between agreeing with the author and reaching “false or harmful” views, when other possibilities may exist?"
+      ]
+    },
+    {
+      "arg_index": 50,
+      "questions": [
+        "If the definition of “wet” includes “consisting of” or “containing” liquid, why must wetness require only being “soaked” in liquid?",
+        "What evidence shows that water cannot satisfy any part of the definition of “wet,” rather than just the “soaked” part?",
+        "Does the argument misrepresent the original definition by turning several possible meanings into only one requirement?"
+      ]
+    },
+    {
+      "arg_index": 51,
+      "questions": [
+        "What specific words or claims show that the person does not believe a trans woman is a woman?",
+        "Is the argument assuming that any denial of “a trans woman is a woman” is necessarily transphobic, and how should that assumption be justified?",
+        "Could the person’s intent, full context, or exact wording change whether the framing should be judged transphobic?"
+      ]
+    },
+    {
+      "arg_index": 52,
+      "questions": [
+        "What exactly do you mean by “old people,” and why should age 50 and older automatically fit that category?",
+        "Was the study intended to represent all people, or was it specifically designed to study Americans ages 50 and older?",
+        "If the participant age range is accurately reported, does that make the study flawed, or does it only limit what conclusions can be drawn from it?"
+      ]
+    },
+    {
+      "arg_index": 53,
+      "questions": [
+        "Does the claim apply to every person living in America, or only to citizens who meet voting eligibility requirements?",
+        "What evidence or legal basis supports the idea that “basic rights as an American” always include the ability to vote?",
+        "How might voting barriers, registration rules, age limits, or disenfranchisement affect the claim that Americans are able to make a difference through elections?"
+      ]
+    },
+    {
+      "arg_index": 54,
+      "questions": [
+        "What specific evidence shows that professional climate predictions have “always” been more accurate than press headlines?",
+        "Does Al Gore not being a climate scientist necessarily mean his climate-related claims are inaccurate, or would we need to examine the evidence he cites?",
+        "Are “press headlines” representative of climate science communication as a whole, or does comparing scientists to headlines create an overly broad generalization?"
+      ]
+    },
+    {
+      "arg_index": 55,
+      "questions": [
+        "What evidence supports the claim that gender is defined primarily by “the way a person relates with society”?",
+        "If dysphoria can exist without gender, what exactly distinguishes dysphoria from being transgender in this argument?",
+        "Could dysphoria be both medically demonstrable and shaped by social conditions, rather than being only non-social?"
+      ]
+    },
+    {
+      "arg_index": 56,
+      "questions": [
+        "What specific moral principle makes designing strike aircraft or missiles morally troubling to you?",
+        "How do you distinguish morally between working on strike aircraft and missiles versus defense technologies?",
+        "Are your qualms based on evidence about actual harms, the possible uses of the weapons, or a change in your personal values over time?"
+      ]
+    },
+    {
+      "arg_index": 57,
+      "questions": [
+        "What kinds of evidence short of “2 identical countries” might still provide useful information about whether patents work?",
+        "Why should theory be considered reliable enough to guide policy if practical testing is described as impossible or harmful?",
+        "What evidence supports the claim that trying this in practice would be “too destructive and harmful”?"
+      ]
+    },
+    {
+      "arg_index": 58,
+      "questions": [
+        "What moral or legal principle makes the hypothetical mother responsible for paying?",
+        "If the scenario is already described as impractical and unrealistic, how would requiring payment work in practice?",
+        "What negative consequences might follow from accepting that someone “should have to pay” in an ideal world without specifying liability or evidence?"
+      ]
+    },
+    {
+      "arg_index": 59,
+      "questions": [
+        "What evidence shows that placing prevention responsibility on victims is “worse in the long run”?",
+        "Can society both encourage practical safety precautions and still clearly place moral responsibility on rapists?",
+        "What assumptions are being made about how public messaging affects the behavior of potential perpetrators?"
+      ]
+    },
+    {
+      "arg_index": 60,
+      "questions": [
+        "What evidence would show that gender identity claims are unreasonable, beyond simply calling them \"dumb\"?",
+        "Why should race and gender be treated as directly comparable categories in this argument?",
+        "Does the phrase \"a man can be a woman\" accurately represent what transgender people or their supporters usually claim, or does it simplify their position?"
+      ]
+    },
+    {
+      "arg_index": 61,
+      "questions": [
+        "How do we know the new equation is truly separate rather than part of the same problem or system where x=2 should still apply?",
+        "What rule distinguishes “carrying x=2 forward incorrectly” from using a previously established value of x correctly?",
+        "If the author’s principle is accepted, what safeguards prevent people from ignoring valid substitutions across related equations?"
+      ]
+    },
+    {
+      "arg_index": 62,
+      "questions": [
+        "What specific kinds of taxes funded public goods before the federal income tax was reenacted in 1913?",
+        "Does showing that some public goods were funded by taxes prove that taxation was sufficient for all public needs before 1913?",
+        "How should the argument distinguish between federal, state, and local taxes when discussing public goods before 1913?"
+      ]
+    },
+    {
+      "arg_index": 63,
+      "questions": [
+        "What evidence shows that court-mandated rehabilitation after punishment would work better than the current system?",
+        "What specific problem in “count 2” is this proposal meant to solve, and how would rehabilitation address it?",
+        "What risks might arise from adding a probationary rehabilitation period after punishment, such as longer state control or ineffective treatment?"
+      ]
+    },
+    {
+      "arg_index": 64,
+      "questions": [
+        "What statistical evidence would be needed to show that there is truly “no correlation” between guns and gun crime?",
+        "Could gun crime be decreasing for reasons unrelated to gun ownership, such as policing, demographics, or economic conditions?",
+        "If the argument says there is “no correlation,” how can it also claim there is a “negative relationship”?"
+      ]
+    },
+    {
+      "arg_index": 65,
+      "questions": [
+        "What makes a food a “snack” or “appetizer” rather than a “meal”—is it the food itself, the portion size, or how people use it?",
+        "Does the fact that your friends eat a giant plate of nachos or a nacho bar as a meal weaken the idea that nachos are only a snack?",
+        "If nachos can include protein, vegetables, and enough calories, why shouldn’t they count as a meal in some contexts?"
+      ]
+    },
+    {
+      "arg_index": 66,
+      "questions": [
+        "What exact cost data shows that Canadian metal remains cheaper after shipping, tariffs, and other added expenses?",
+        "Does cheaper price alone justify buying from Canada, or should factors like supply security, quality, and domestic jobs also affect the decision?",
+        "If we accept the argument and keep buying Canadian metal, what might happen to domestic producers over time?"
+      ]
+    },
+    {
+      "arg_index": 67,
+      "questions": [
+        "What evidence shows that “leftists always” propose raising taxes, rather than sometimes proposing spending cuts, borrowing, or program redesign?",
+        "How much money can actually be raised through taxes in the situation being discussed, and what data supports that limit?",
+        "Even if tax revenue has limits, does that prove tax increases are never useful, or only that they cannot solve every shortage by themselves?"
+      ]
+    },
+    {
+      "arg_index": 68,
+      "questions": [
+        "What evidence would show that China’s economic importance actually means a broader “changing of the guard” in global power?",
+        "Does being economically indispensable necessarily make a country the dominant global leader, or are other forms of power also required?",
+        "Could military strength, alliances, technology, or political influence matter more than economic dependence when judging global dominance?"
+      ]
+    },
+    {
+      "arg_index": 69,
+      "questions": [
+        "What evidence supports the claim that prostitution is the “only job” where the boundary between theft and rape becomes blurred?",
+        "How does the argument distinguish between consensual paid sex, coerced sex, and sex without payment after an agreement?",
+        "Could the analogy between “taking a car without consent” and “having sex without consent” explain theft and rape separately without proving that prostitution necessarily blurs them?"
+      ]
+    },
+    {
+      "arg_index": 70,
+      "questions": [
+        "What kind of testing or proof would be needed before we should say a scientific answer is “probably correct”?",
+        "Does the example that science discovered Earth is a globe provide enough support for the broader claim that science generally finds trustworthy answers?",
+        "How might the argument change if science were described as producing revisable explanations rather than final proven answers?"
+      ]
+    },
+    {
+      "arg_index": 71,
+      "questions": [
+        "What specific circumstance would actually force someone to give up bodily autonomy and medical health so another person can live?",
+        "Is saying that such circumstances “could” exist enough to weaken the original claim, or would an actual example be needed?",
+        "Even if a comparable circumstance existed, would that show the original bodily autonomy argument is wrong, or only that it needs more precise wording?"
+      ]
+    },
+    {
+      "arg_index": 72,
+      "questions": [
+        "What evidence shows that dismissing God necessarily means a person “places faith” in themselves rather than simply finding the evidence for God unconvincing?",
+        "Does rejecting a belief always require the same kind of “faith” as accepting that belief, or could rejection be based on uncertainty, lack of evidence, or different standards of proof?",
+        "Are people who dismiss God being accurately represented, or is their position being reduced to “worshipping themselves” or “believing they know everything”?"
+      ]
+    },
+    {
+      "arg_index": 73,
+      "questions": [
+        "What evidence supports the claim that humans are not biologically set up to eat a strictly plant-based diet?",
+        "Why should the morality of eating meat be separated from the morality of the systems that produce that meat?",
+        "Could both the act of eating meat and the practices of factory farming be morally relevant at the same time?"
+      ]
+    },
+    {
+      "arg_index": 74,
+      "questions": [
+        "What evidence shows that attempting suicide and actual suicide are not similar in the ways relevant to the argument?",
+        "How does the fact that women are more likely to attempt suicide support the claim that attempts and completed suicides are not similar?",
+        "Could factors such as method lethality, access to means, or intent explain differences between suicide attempts and deaths without making them entirely dissimilar?"
+      ]
+    },
+    {
+      "arg_index": 75,
+      "questions": [
+        "What kind of “respect” is being discussed here—basic courtesy toward people, admiration for character, or deference to authority?",
+        "Why should the belief that “respect is earned” apply to all forms of respect, rather than only to deeper admiration or trust?",
+        "Does framing respect as either “earned” or “given away” ignore other possibilities, such as offering basic dignity while reserving admiration for those who earn it?"
+      ]
+    },
+    {
+      "arg_index": 76,
+      "questions": [
+        "What evidence would show that “every little thing” is being labelled cultural appropriation rather than only some culturally significant practices?",
+        "Is a person’s reason for wearing dreadlocks—“because he likes the style”—enough to determine whether cultural appropriation is involved?",
+        "How representative is one white friend with dreadlocks as evidence for a broader claim about cultural appropriation labels?"
+      ]
+    },
+    {
+      "arg_index": 77,
+      "questions": [
+        "What exactly counts as \"faith\" here, and is it the same kind of faith used in religion, science, and everyday decision-making?",
+        "What evidence shows that every action or belief always contains a fundamental element of faith?",
+        "Could scientific trust in evidence, methods, or prior results be different from faith, and if so, how would that affect the argument?"
+      ]
+    },
+    {
+      "arg_index": 78,
+      "questions": [
+        "What evidence would show that women’s job choices are caused by “brains working differently” rather than by social expectations, education, or opportunity?",
+        "Does the existence of separate sport teams prove that women and men generally behave differently, or does it only support a narrower claim about some physical differences?",
+        "How could the argument account for individual women who are stronger than many men or who choose the same jobs as men?"
+      ]
+    },
+    {
+      "arg_index": 79,
+      "questions": [
+        "What evidence supports the claim that vaccines are “90%” about collective protection and only “10%” about individual protection?",
+        "Does proving that vaccines have societal benefits automatically prove that the other person is “demonstrably and provably wrong”?",
+        "How might the argument change if individual risks, medical exceptions, or vaccine effectiveness differences were considered alongside collective protection?"
+      ]
+    },
+    {
+      "arg_index": 80,
+      "questions": [
+        "What evidence shows that the system’s primary goal is “producing as much sustainable profit as possible” rather than serving public needs or allocating resources efficiently?",
+        "Why should meritocracy and the needs of the public be considered only “side effects” rather than central goals or constraints of the system?",
+        "How would your definition change if policies sometimes prioritize regulation, public welfare, or fairness over sustainable profit?"
+      ]
+    },
+    {
+      "arg_index": 81,
+      "questions": [
+        "What kind of evidence would be needed to support or refute the claim that “no race has a specific smell”?",
+        "How do we know the smell came from people eating similar foods rather than from another factor such as environment, hygiene products, or individual biology?",
+        "When does noticing a pattern become an unfair assumption based on skin color, and what additional context would help distinguish the two?"
+      ]
+    },
+    {
+      "arg_index": 82,
+      "questions": [
+        "What evidence would show that personal property was invented primarily “to oppress,” rather than also serving coordination, protection, or social-order functions?",
+        "If property does not exist as a “platonic form,” does that necessarily mean it is illegitimate, or could socially constructed institutions still have practical validity?",
+        "Does the claim about “propaganda and violence” apply to all forms of personal property, or only to certain property systems under specific historical conditions?"
+      ]
+    },
+    {
+      "arg_index": 83,
+      "questions": [
+        "What evidence would show that this is a broader pattern among rich people rather than only a few high-profile political figures?",
+        "How do we know that Bush and Trump avoided consequences specifically because of wealth, rather than political power, legal complexity, or prosecutorial discretion?",
+        "Are the examples of Bush and Trump enough to support a general claim about rich people getting away with crimes, or could that be a hasty generalization?"
+      ]
+    },
+    {
+      "arg_index": 84,
+      "questions": [
+        "What evidence shows that being born a woman is sufficient by itself to determine fair competition within a weight class?",
+        "If we cannot determine how much “being born male” affects athletic performance, why should uncertainty automatically lead to exclusion rather than further assessment?",
+        "Are there other possible eligibility standards besides “born a woman” versus “born male,” such as hormone levels, training history, or sport-specific performance data?"
+      ]
+    },
+    {
+      "arg_index": 85,
+      "questions": [
+        "What definition of “bioterrorism” would include throwing a big party during a pandemic, and does that definition require intent to spread disease?",
+        "What evidence would show that a big party during a pandemic creates enough risk to be compared to bioterrorism rather than ordinary reckless behavior?",
+        "Are there circumstances where a gathering during a pandemic might not be comparable to bioterrorism, such as vaccination, ventilation, masking, or low transmission rates?"
+      ]
+    },
+    {
+      "arg_index": 86,
+      "questions": [
+        "What exactly is your stance on cross-racial casting, since the argument says it “remains the same” but does not state what that stance is?",
+        "What evidence or context would show that “a white guy playing a black character” and “a black guy playing a white character” are socially equivalent cases?",
+        "Could historical representation, power imbalance, or stereotyping make one casting situation different from the other, even if both involve actors playing another race?"
+      ]
+    },
+    {
+      "arg_index": 87,
+      "questions": [
+        "What evidence supports the claim that hell necessarily prevents all redemption forever?",
+        "If prison only allows reform “in theory,” how often does it actually help people become better?",
+        "Are prison and hell the only relevant models of punishment, or are there other possibilities such as restoration, rehabilitation, or temporary punishment?"
+      ]
+    },
+    {
+      "arg_index": 88,
+      "questions": [
+        "What definition of “meaningless” is being assumed when temporary enjoyment is described as meaningless?",
+        "How does the fact that “eating chocolate is a subset of life” support the claim that impermanent enjoyment can still have meaning?",
+        "Could an experience be meaningful because of its intensity, memory, or personal value, even if it does not last forever?"
+      ]
+    },
+    {
+      "arg_index": 89,
+      "questions": [
+        "If small artists are unlikely to be sued, does that really make their use \"fair use,\" or does it only mean enforcement is less likely?",
+        "What evidence shows that copyright holders base lawsuit decisions only on whether the defendant has money?",
+        "Could other enforcement tools, such as DMCA takedowns, injunctions, statutory damages, or deterrence suits, weaken the claim that small artists have de-facto protection?"
+      ]
+    },
+    {
+      "arg_index": 90,
+      "questions": [
+        "What specific “measurable metrics of success” are being used, and do they all actually show the North outperforming the South?",
+        "Which infomaps are being referenced, and are they reliable, current, and representative of the whole United States?",
+        "Could some southern states or regions perform well on certain metrics, making the phrase “any measurable metric” an overgeneralization?"
+      ]
+    },
+    {
+      "arg_index": 91,
+      "questions": [
+        "What kind of “tests” are being discussed, and why should asking for them become more socially acceptable?",
+        "What evidence shows that stigma is what prevents men from asking for these tests more often?",
+        "How might encouraging more testing affect trust, privacy, or conflict within families?"
+      ]
+    },
+    {
+      "arg_index": 92,
+      "questions": [
+        "What specific feature of the global pandemic makes your argument work when it would not work under normal circumstances?",
+        "Can you provide evidence that “the world's condition right now” changes the standards by which the argument should be judged?",
+        "How can you separate the criticism of the other person's understanding from the actual evidence that your argument is valid?"
+      ]
+    },
+    {
+      "arg_index": 93,
+      "questions": [
+        "Does one example involving a 16-year-old daughter prove that the broader concept of virginity is not always negative, or only that it may be positive in that specific context?",
+        "What assumptions are being made about why a parent would be “happy” that their daughter is still a virgin?",
+        "Could viewing virginity positively in this case also reinforce harmful social expectations, such as purity stigma or double standards?"
+      ]
+    },
+    {
+      "arg_index": 94,
+      "questions": [
+        "How would this definition of “objective” apply to the specific issue or claim being discussed?",
+        "What prior questions need to be repeated or clarified before the discussion can move forward?",
+        "Can something be completely free from personal opinions, or is objectivity better understood as a method for reducing bias?"
+      ]
+    },
+    {
+      "arg_index": 95,
+      "questions": [
+        "What definition of “strength” is being used here, and does it include maximal force, endurance, speed, or all of these?",
+        "What evidence shows that people who run a four-minute mile are “much stronger” than excellent deadlifters?",
+        "Even if some elite runners outperform some deadlifters on certain fitness measures, would that be enough to prove deadlifting has no correlation with strength?"
+      ]
+    },
+    {
+      "arg_index": 96,
+      "questions": [
+        "Does the ability to feel suffering automatically mean animals and humans are equal in every morally relevant way?",
+        "What does “treated the same” mean in practice, given that animals and humans may have different needs and capacities?",
+        "Are there other morally relevant factors, such as moral agency or species-specific needs, that could affect how animals should be treated?"
+      ]
+    },
+    {
+      "arg_index": 97,
+      "questions": [
+        "If wrongful execution is irreversible while wrongful imprisonment can sometimes be corrected, does that difference make the innocence argument relevant after all?",
+        "What evidence would show that wrongful convictions leading to execution and wrongful convictions leading to long imprisonment should be treated as equally serious policy problems?",
+        "Does the fact that innocent people suffer under non-death-penalty sentences weaken the argument against execution, or does it instead show a broader problem with criminal punishment?"
+      ]
+    },
+    {
+      "arg_index": 98,
+      "questions": [
+        "What evidence shows that the absence of socialized medicine is connected to civilization’s advancement, rather than merely existing alongside it?",
+        "Why should socialized medicine be treated as equivalent to a monopoly on healthcare?",
+        "How is a monopoly on force relevantly similar to or different from a monopoly on healthcare?"
+      ]
+    },
+    {
+      "arg_index": 99,
+      "questions": [
+        "What evidence would show that every Nazi or Nazi sympathizer poses an immediate enough threat to make punching them self defense?",
+        "Does believing in a violent ideology automatically make someone a direct threat, or is an additional action, intent, or circumstance needed?",
+        "Could accepting this reasoning create a broader rule where political violence is justified against people with dangerous beliefs, and how would that rule be limited?"
+      ]
+    },
+    {
+      "arg_index": 100,
+      "questions": [
+        "What do you mean by “inherently unethical,” and how would that differ from something being unethical only in certain contexts?",
+        "Why should the existence of different ethical perspectives and motivations show that killing an animal is not inherently unethical?",
+        "What factors—such as suffering, necessity, sentience, or intention—would make killing an animal ethically acceptable or unacceptable?"
+      ]
+    },
+    {
+      "arg_index": 101,
+      "questions": [
+        "What specific factors besides scarcity make physical land valuable?",
+        "If scarcity is “only part” of land value, how large a part is it compared with location, demand, zoning, or usefulness?",
+        "What evidence would show that the original claim, “physical land has value because it’s scarce,” is incomplete rather than simply false?"
+      ]
+    },
+    {
+      "arg_index": 102,
+      "questions": [
+        "What kind of “truth” does science determine, and does that include claims about the divine?",
+        "What evidence would show that the divine is open to scientific investigation rather than only philosophical or theological interpretation?",
+        "Does defining theology as “study of the divine” automatically mean every method of studying truth is appropriate for theology?"
+      ]
+    },
+    {
+      "arg_index": 103,
+      "questions": [
+        "What evidence shows that easier essay restructuring on a PC actually improves academic success rather than only making writing more convenient?",
+        "Are all students equally helped by PC-based writing, or could device access, typing skill, or software familiarity create new unfair barriers?",
+        "In what ways might handwriting still support academic learning, and how would that affect the claim that it unfairly stifles students?"
+      ]
+    },
+    {
+      "arg_index": 104,
+      "questions": [
+        "What exactly was being compared between the treatment of the Trump administration and the treatment of Nazis: severity, legal accountability, rhetoric, or something else?",
+        "Does pointing out that Nazis were killed and prosecuted fully address the original comparison, or could the comparison have been about a narrower issue such as prosecution of leaders?",
+        "What evidence would show that the comparison is truly hyperbolic rather than simply historically provocative or morally charged?"
+      ]
+    },
+    {
+      "arg_index": 105,
+      "questions": [
+        "What evidence shows that people who did not vote, or voted for the “lesser of evils,” caused the country to “burn”?",
+        "How would we determine who “the best” candidate is, rather than simply another perceived lesser evil?",
+        "Could a national crisis make voters more fearful, polarized, or misinformed rather than more likely to vote wisely?"
+      ]
+    },
+    {
+      "arg_index": 106,
+      "questions": [
+        "Does “you wouldn’t have the gun” mean the person would not have this newly ordered gun, or no gun at all?",
+        "What evidence shows that the person could not access another firearm during the waiting period?",
+        "If the waiting period delays legal purchase, what possible harms or benefits might result from that delay?"
+      ]
+    },
+    {
+      "arg_index": 107,
+      "questions": [
+        "Does the fact that everyone dies necessarily mean that not being frightened is \"short sighted\"?",
+        "What evidence supports the claim that people block thoughts of death because thinking about it would be debilitating?",
+        "Could people be unafraid of death for reasons other than denial, such as acceptance, faith, or coping strategies?"
+      ]
+    },
+    {
+      "arg_index": 108,
+      "questions": [
+        "What evidence shows that skinny people would fly more if large people flew less because of the rule?",
+        "Even if some skinny passengers flew more, how do we know their increase would fully offset the loss of large passengers?",
+        "Why should we assume that large people flying less would cause skinny people to fly more, rather than both groups being affected by other factors such as price, comfort, or fairness concerns?"
+      ]
+    },
+    {
+      "arg_index": 109,
+      "questions": [
+        "What specific evidence shows that “black American culture” as a whole is harmful rather than only certain behaviors, subcultures, or social conditions?",
+        "How does saying “I don’t care about their skin color” prove that the judgment about black American culture is not influenced by racial bias?",
+        "Could describing an entire culture as harmful be a hasty generalization, especially if no representative examples or criteria are given?"
+      ]
+    },
+    {
+      "arg_index": 110,
+      "questions": [
+        "What specific action are you proposing for “hot button issues” if you are not advocating nullification of the federal government?",
+        "What legal or constitutional basis would allow different treatment of abortion, gun laws, or drug laws without undermining federal authority?",
+        "Could applying this approach only to controversial issues create inconsistent enforcement or selective respect for federal law?"
+      ]
+    },
+    {
+      "arg_index": 111,
+      "questions": [
+        "What specific words or actions show that the other person dismissed your point without reason?",
+        "What standard are you using to decide whether someone is participating “in good faith”?",
+        "Could the other person be disagreeing, asking for clarification, or applying different evidence standards rather than dismissing your point?"
+      ]
+    },
+    {
+      "arg_index": 112,
+      "questions": [
+        "What does it mean for an “interpretation” to correspond to reality, and are all interpretations the kind of thing that can be simply true or false?",
+        "Does the conclusion hold only when both people are interpreting the exact same object, context, and factual claim?",
+        "Could two interpretations seem mutually exclusive because they emphasize different aspects of reality rather than because one is false?"
+      ]
+    },
+    {
+      "arg_index": 113,
+      "questions": [
+        "What legal rule or IRS guidance supports the claim that illegal income “should” be filed?",
+        "Even if the IRS does not enforce non-tax laws directly, are there circumstances where reporting illegal income could still create legal exposure?",
+        "Does the argument rely too heavily on the IRS’s enforcement role while ignoring other agencies or legal processes?"
+      ]
+    },
+    {
+      "arg_index": 114,
+      "questions": [
+        "What evidence shows that the other person would “still find a reason to blame the guns” regardless of circumstances?",
+        "Does “disarm everyone except criminals” accurately describe the gun-control position being criticized, or is it an exaggerated version?",
+        "If criminals still have guns, could the issue be enforcement, illegal markets, or policy design rather than simply whether people “blame the guns”?"
+      ]
+    },
+    {
+      "arg_index": 115,
+      "questions": [
+        "Does the fact that work is necessary for survival automatically make working morally “more right” than not working?",
+        "If only “some work” must be done for survival, does that imply every individual has a duty to work?",
+        "How should the argument account for people who cannot work, such as people with disabilities, caregivers, or people excluded from work opportunities?"
+      ]
+    },
+    {
+      "arg_index": 116,
+      "questions": [
+        "What specific issue or conclusion is your “view” about, and what exactly do you believe?",
+        "How does being a single mother of a 12-year-old son support or limit the perspective you are offering?",
+        "Since you acknowledge your view may be skewed, what additional perspectives or evidence would help balance it?"
+      ]
+    },
+    {
+      "arg_index": 117,
+      "questions": [
+        "What specific quality-of-life factors make Europe “much better” than the US in this comparison?",
+        "How representative are your personal experience and your family/friends’ experiences across Europe, given that Europe is “big and varied”?",
+        "Could the conclusion depend more on your individual circumstances, such as country, job, healthcare needs, or lifestyle preferences, rather than Europe being generally better?"
+      ]
+    },
+    {
+      "arg_index": 118,
+      "questions": [
+        "What evidence supports the claim that a \"tangible quantifiable life\" begins exactly at conception rather than at some other developmental stage?",
+        "Does the argument depend on all contraceptives working only before conception, and are there exceptions that would affect the conclusion?",
+        "If someone defines \"life\" differently, would the argument still show that contraception is not killing, or does it only work under one definition?"
+      ]
+    },
+    {
+      "arg_index": 119,
+      "questions": [
+        "What evidence shows that the policy or position being discussed would actually make police unable to enforce the law, rather than simply limiting certain enforcement methods?",
+        "Are democracy and anarchy really the only possible outcomes, or could a society maintain law enforcement while also imposing limits on police power?",
+        "What longer-term consequences should be weighed besides public order, such as civil liberties, accountability, or proportional enforcement?"
+      ]
+    }
+  ]
+}

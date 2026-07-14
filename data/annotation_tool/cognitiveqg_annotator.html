@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>CognitiveQG Trace–Question Consistency Platform</title>
+<style>
+  :root{
+    --bg1:#eef0fb; --bg2:#e7ecfb; --ink:#27314a; --muted:#6b7693; --line:#e6e9f5;
+    --blue:#4f5bd5; --blue-soft:#eef0fd; --blue-deep:#3a45b8;
+    --green:#2f9e6e; --green-bg:#e8f7ef; --green-line:#bfe6d2;
+    --red:#d9544d; --red-bg:#fdecea; --red-line:#f2c7c3;
+    --amber:#c98a1e; --amber-bg:#fdf3e1;
+    --card:#ffffff; --shadow:0 8px 30px rgba(60,72,140,.10);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+    background:linear-gradient(160deg,var(--bg1),var(--bg2));color:var(--ink);font-size:14.5px;line-height:1.55;min-height:100vh}
+  .wrap{max-width:1500px;margin:0 auto;padding:18px}
+  .card{background:var(--card);border-radius:20px;box-shadow:var(--shadow);padding:20px 22px;margin-bottom:16px}
+  h1,h2,h3{margin:0}
+  .h-title{font-size:20px;font-weight:700;color:var(--blue-deep)}
+  .h-sub{font-size:13.5px;color:var(--muted);margin-top:3px}
+  .card h2{font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--blue);margin-bottom:14px;font-weight:700}
+  .row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+  .spacer{flex:1}
+  .btn{border:none;border-radius:12px;padding:9px 16px;font-size:14px;font-weight:600;cursor:pointer;background:var(--blue-soft);color:var(--blue-deep);transition:.15s}
+  .btn:hover{filter:brightness(.97)}
+  .btn.primary{background:var(--blue);color:#fff}
+  .btn.primary:hover{background:var(--blue-deep)}
+  .btn.ghost{background:#fff;border:1.5px solid var(--line);color:var(--ink)}
+  .btn.sm{padding:6px 11px;font-size:12.5px;border-radius:9px}
+  input[type=text],textarea,select{width:100%;font-family:inherit;font-size:14px;border:1.5px solid var(--line);border-radius:12px;padding:10px 12px;background:#fcfcff;color:var(--ink)}
+  textarea{resize:vertical;min-height:54px;line-height:1.5}
+  input:focus,textarea:focus,select:focus{outline:none;border-color:var(--blue)}
+  .lab{font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin-bottom:6px;display:block}
+  .pill{display:inline-block;font-size:12px;font-weight:700;border-radius:999px;padding:4px 12px}
+  .pill-blue{background:var(--blue-soft);color:var(--blue-deep)}
+  .pill-green{background:var(--green-bg);color:var(--green)}
+  .pill-red{background:var(--red-bg);color:var(--red)}
+  .pill-amber{background:var(--amber-bg);color:var(--amber)}
+  .pill-grey{background:#eef0f5;color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr 1.15fr 1.25fr;gap:16px;align-items:start}
+  @media(max-width:1100px){.grid{grid-template-columns:1fr}}
+  /* left card */
+  .arg-box{background:#fafbff;border:1.5px solid var(--line);border-radius:14px;padding:14px 16px;font-size:15px;line-height:1.6;max-height:280px;overflow:auto;cursor:default}
+  .ref{margin-top:14px}
+  .ref .v{background:#fafbff;border:1.5px solid var(--line);border-radius:12px;padding:9px 12px;font-size:13.5px}
+  .clickable{cursor:pointer}
+  .clickable:hover{background:var(--blue-soft)}
+  .judge-strip{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+  .judge-strip .box{flex:1;min-width:130px;background:#fff;border:1.5px solid var(--line);border-radius:12px;padding:8px 10px}
+  /* phase cards */
+  .phase{border:1.5px solid var(--line);border-radius:14px;margin-bottom:10px;overflow:hidden;background:#fff}
+  .phase-h{display:flex;align-items:center;gap:10px;padding:12px 14px;cursor:pointer;user-select:none;font-weight:700;font-size:14.5px}
+  .phase-h:hover{background:#fafbff}
+  .phase-h .chev{margin-left:auto;color:var(--muted);transition:.15s}
+  .phase.open .chev{transform:rotate(90deg)}
+  .phase-b{display:none;padding:6px 14px 12px}
+  .phase.open .phase-b{display:block}
+  .fld{border-radius:10px;padding:8px 10px;margin-top:6px;background:#fbfcff;border:1.5px solid var(--line)}
+  .fld.primary{border-color:var(--blue);background:var(--blue-soft)}
+  .fld.supports{border-color:var(--green-line);background:var(--green-bg)}
+  .fld.contradicts{border-color:var(--red-line);background:var(--red-bg)}
+  .fld.missing{border-color:#e3d2a8;background:var(--amber-bg)}
+  .fld .k{font-size:11.5px;font-weight:700;color:var(--muted);font-family:ui-monospace,Menlo,monospace}
+  .fld .val{font-size:14px;margin-top:2px}
+  .fld .val.click{cursor:pointer}
+  .fld .val.click:hover{text-decoration:underline}
+  .fbtns{display:flex;gap:6px;margin-top:7px;flex-wrap:wrap}
+  .fbtn{border:1.5px solid var(--line);background:#fff;border-radius:8px;padding:3px 9px;font-size:11.5px;font-weight:600;cursor:pointer;color:var(--muted)}
+  .fbtn:hover{border-color:var(--blue);color:var(--blue-deep)}
+  .fbtn.on-primary{background:var(--blue);color:#fff;border-color:var(--blue)}
+  .fbtn.on-supports{background:var(--green);color:#fff;border-color:var(--green)}
+  .fbtn.on-contradicts{background:var(--red);color:#fff;border-color:var(--red)}
+  .fbtn.on-missing{background:var(--amber);color:#fff;border-color:var(--amber)}
+  .deg{font-size:10px;font-weight:700;color:var(--red);background:var(--red-bg);border-radius:6px;padding:1px 6px;margin-left:6px}
+  /* question card */
+  .qbig{background:var(--blue-soft);border-radius:14px;padding:14px 16px;font-size:17px;line-height:1.5;font-weight:600;cursor:pointer}
+  .qnav{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+  .primary-show{background:#fff;border:1.5px solid var(--line);border-radius:12px;padding:10px 12px;margin:14px 0}
+  .primary-show .k{font-size:11.5px;color:var(--muted);font-family:ui-monospace,Menlo,monospace;font-weight:700}
+  .primary-show .v{font-size:14.5px;margin-top:3px}
+  .ask{text-align:center;font-size:15.5px;font-weight:700;margin:16px 0 12px}
+  .bigbtns{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .bigbtn{border:2px solid transparent;border-radius:16px;padding:16px;text-align:center;cursor:pointer;font-weight:800;font-size:17px;transition:.15s}
+  .bigbtn .d{font-size:12px;font-weight:500;margin-top:6px;line-height:1.4}
+  .bigbtn.follows{background:var(--green-bg);color:var(--green);border-color:var(--green-line)}
+  .bigbtn.contradicts{background:var(--red-bg);color:var(--red);border-color:var(--red-line)}
+  .bigbtn.sel.follows{border-color:var(--green);box-shadow:0 0 0 3px rgba(47,158,110,.18)}
+  .bigbtn.sel.contradicts{border-color:var(--red);box-shadow:0 0 0 3px rgba(217,84,77,.18)}
+  .bigbtn:not(.sel){opacity:.78}
+  .seg{display:flex;gap:8px}
+  .seg button{flex:1;border:1.5px solid var(--line);background:#fff;border-radius:10px;padding:8px;font-weight:700;font-size:13px;cursor:pointer;color:var(--muted)}
+  .seg button.on{background:var(--blue);color:#fff;border-color:var(--blue)}
+  .mt{margin-top:14px}
+  /* case4 */
+  .case4{border:2px solid var(--red-line);background:#fffafa;border-radius:20px}
+  .case4 h2{color:var(--red)}
+  .auto{background:#fff;border:1.5px solid var(--line);border-radius:12px;padding:9px 12px;min-height:40px;font-size:13.5px}
+  .chips{display:flex;gap:6px;flex-wrap:wrap}
+  .chip{font-size:12px;font-weight:600;border-radius:8px;padding:3px 9px;font-family:ui-monospace,Menlo,monospace}
+  .chip.s{background:var(--green-bg);color:var(--green)} .chip.c{background:var(--red-bg);color:var(--red)} .chip.m{background:var(--amber-bg);color:var(--amber)}
+  /* summary */
+  .scards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+  .scard{background:#fafbff;border:1.5px solid var(--line);border-radius:14px;padding:12px 14px}
+  .scard .l{font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);font-weight:700}
+  .scard .b{font-size:16px;font-weight:800;margin-top:5px}
+  .casebanner{border-radius:14px;padding:13px 16px;font-weight:800;font-size:16px;margin-top:14px}
+  .cb1{background:#f1f3f9;color:#516085} .cb2{background:var(--green-bg);color:var(--green)}
+  .cb3{background:var(--amber-bg);color:var(--amber)} .cb4{background:var(--red-bg);color:var(--red)}
+  .warn{display:none;background:var(--red-bg);border:1.5px solid var(--red-line);color:var(--red);border-radius:14px;padding:12px 16px;margin-top:12px;font-size:13.5px}
+  .warn.show{display:block}
+  .warn ul{margin:6px 0 0;padding-left:20px}
+  .progressbar{height:8px;border-radius:999px;background:#e7e9f4;overflow:hidden;flex:1;min-width:120px}
+  .progressbar > div{height:100%;background:var(--blue);width:0%}
+  .muted{color:var(--muted);font-size:12.5px}
+  pre.out{display:none;background:#1f2540;color:#dfe6ff;border-radius:14px;padding:14px;font-size:11.5px;max-height:320px;overflow:auto;margin-top:12px}
+  pre.out.show{display:block}
+  .def{font-size:12px;color:var(--muted);margin-top:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- HEADER -->
+  <div class="card">
+    <div class="row">
+      <div>
+        <h1 class="h-title">CognitiveQG Trace–Question Consistency Platform</h1>
+        <div class="h-sub">Analyze whether the model's Socratic question follows from its own reasoning trace.</div>
+      </div>
+      <div class="spacer"></div>
+      <div style="text-align:right">
+        <span class="lab" style="margin:0">Annotator</span>
+        <input id="annId" type="text" placeholder="your id" style="width:120px"/>
+      </div>
+    </div>
+    <div class="row mt">
+      <span class="pill pill-blue" id="exCounter">Example — / —</span>
+      <span class="pill pill-grey" id="preCasePill">Pre-assigned case: —</span>
+      <span class="pill pill-grey" id="modelPill">Model: —</span>
+      <div class="spacer"></div>
+      <button class="btn ghost sm" id="loadBtn">📂 Load JSON</button>
+      <button class="btn ghost sm" id="prevBtn">‹ Prev</button>
+      <button class="btn ghost sm" id="nextBtn">Next ›</button>
+      <button class="btn sm" id="expBtn">Export current</button>
+      <button class="btn primary sm" id="expAllBtn">Export all</button>
+      <input type="file" id="file" accept="application/json" style="display:none"/>
+    </div>
+    <div class="row mt">
+      <span class="muted" id="compLabel">Completion 0%</span>
+      <div class="progressbar"><div id="compBar"></div></div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <!-- LEFT: Argument + Reference -->
+    <div class="card">
+      <h2>Argument &amp; Reference</h2>
+      <div class="arg-box" id="argBox"></div>
+
+      <div class="ref">
+        <span class="lab">Human intended weakness</span>
+        <div class="v clickable" id="hWeak" title="click to use as human-reference evidence"></div>
+      </div>
+      <div class="ref">
+        <span class="lab">Human reference question</span>
+        <div class="v clickable" id="hQ" title="click to use as human-reference evidence"></div>
+      </div>
+
+      <div class="judge-strip">
+        <div class="box">
+          <span class="lab">LLM judge: correctness</span>
+          <select id="jCorr"></select>
+        </div>
+        <div class="box">
+          <span class="lab">LLM judge: FOCUS type</span>
+          <select id="jFocus"></select>
+        </div>
+      </div>
+      <div class="def">Correctness &amp; FOCUS come from the LLM judge — you do not re-score them.</div>
+
+      <div class="ref mt">
+        <span class="lab">Argument evidence span</span>
+        <textarea id="argSpan" placeholder="Quote the argument span the question draws on (optional until export)…"></textarea>
+      </div>
+    </div>
+
+    <!-- CENTER: Trace -->
+    <div class="card">
+      <h2>Model Reasoning Trace</h2>
+      <div class="muted" style="margin:-8px 0 12px">Primary field auto-suggested (priority <b>missingComponent → logicalFallacy → coreClaim</b>). Click a field value to use it as evidence; use the buttons to mark it.</div>
+      <div id="phases"></div>
+    </div>
+
+    <!-- RIGHT: Question judgment -->
+    <div class="card">
+      <h2>Question Consistency Judgment</h2>
+      <div class="qnav">
+        <button class="btn ghost sm" id="qPrev">‹</button>
+        <span class="pill pill-blue" id="qCounter">Question — / —</span>
+        <button class="btn ghost sm" id="qNext">›</button>
+        <div class="spacer"></div>
+        <span class="pill" id="qLabelPill">—</span>
+      </div>
+
+      <div class="qbig clickable" id="qText" title="click to use as question evidence"></div>
+
+      <div class="row mt">
+        <span class="pill pill-grey" id="qJudgeCorr">judge: —</span>
+        <span class="pill pill-grey" id="qJudgeFocus">FOCUS: —</span>
+      </div>
+
+      <div class="primary-show">
+        <div class="k" id="primKey">primary field: (none selected)</div>
+        <div class="v" id="primVal">—</div>
+      </div>
+
+      <div class="ask">Does this question follow from the selected trace field?</div>
+      <div class="bigbtns">
+        <div class="bigbtn follows" id="btnFollows">FOLLOWS<div class="d">The trace field provides a clear path to the question.</div></div>
+        <div class="bigbtn contradicts" id="btnContradicts">CONTRADICTS<div class="d">The trace field is missing, unrelated, or points to a different target.</div></div>
+      </div>
+
+      <div class="mt">
+        <span class="lab">Confidence</span>
+        <div class="seg" id="confSeg">
+          <button data-c="High">High</button><button data-c="Medium">Medium</button><button data-c="Low">Low</button>
+        </div>
+      </div>
+
+      <div class="mt"><span class="lab">Evidence from question</span><textarea id="evQ"></textarea></div>
+      <div class="mt"><span class="lab">Evidence from trace</span><textarea id="evT"></textarea></div>
+      <div class="mt"><span class="lab">Evidence from human reference / judge</span><textarea id="evH"></textarea></div>
+    </div>
+  </div>
+
+  <!-- CASE 4 -->
+  <div class="card case4" id="case4" style="display:none">
+    <h2>⚠ Case 4: Correct Question, Bad Reasoning Path</h2>
+    <div class="muted" style="margin:-6px 0 14px">The judge marked this question <b>correct</b>, but it does <b>not</b> follow from the trace. Diagnose where the reasoning path breaks. Lists auto-fill from the fields you marked in the trace.</div>
+    <div class="grid" style="grid-template-columns:1fr 1fr">
+      <div>
+        <span class="lab">Good question target</span>
+        <textarea id="c4target" placeholder="The target the (correct) question matched…"></textarea>
+        <div class="mt"><span class="lab">Field(s) that support the question</span><div class="auto chips" id="c4support"></div></div>
+        <div class="mt"><span class="lab">Field(s) that contradict the question</span><div class="auto chips" id="c4contra"></div></div>
+        <div class="mt"><span class="lab">Field(s) that are missing / filler</span><div class="auto chips" id="c4missing"></div></div>
+      </div>
+      <div>
+        <span class="lab">Main break point in the reasoning path</span>
+        <select id="c4break"></select>
+        <div class="mt"><span class="lab">Why the final question cannot be fully derived from the trace</span>
+          <textarea id="c4why" style="min-height:90px"></textarea></div>
+        <div class="mt"><span class="lab">Final judgment</span>
+          <div class="seg" id="c4final">
+            <button data-v="Fully supported">Fully supported</button>
+            <button data-v="Partially supported">Partially supported</button>
+            <button data-v="Unsupported / contradicted">Unsupported</button>
+          </div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="card">
+    <h2>Summary</h2>
+    <div class="scards">
+      <div class="scard"><div class="l">This question</div><div class="b" id="sQ">—</div></div>
+      <div class="scard"><div class="l">Majority label</div><div class="b" id="sMaj">—</div></div>
+      <div class="scard"><div class="l">Judge correctness</div><div class="b" id="sCorr">—</div></div>
+      <div class="scard"><div class="l">Implied 2×2 case</div><div class="b" id="sImplied">—</div></div>
+      <div class="scard"><div class="l">Matches pre-assigned?</div><div class="b" id="sMatch">—</div></div>
+      <div class="scard"><div class="l">Completion</div><div class="b" id="sComp">0%</div></div>
+    </div>
+    <div class="casebanner cb1" id="caseBanner">Implied case: —</div>
+    <div class="mt"><span class="lab">Notes</span><textarea id="notes" placeholder="Free-text notes (optional)…"></textarea></div>
+    <div class="warn" id="warn"></div>
+    <pre class="out" id="out"></pre>
+  </div>
+
+</div>
+
+<script>
+/* ============ default sample (replace via Load JSON) ============ */
+const SAMPLE = {model:"Sample (LLaMA-2 Arg 15)", model_key:"sample", n_examples:1, examples:[{
+  example_id:"arg15_wet", case:4, case_name:"Case 4 — Correct Question, Unsupported Path",
+  trace_jac:0.2255, judge_semantic_equivalence:0.4167,
+  argument:"I'd like to start with the definition of wet: wet — consisting of, containing, covered with, or soaked with liquid (such as water). For something to be wet, it must have liquid on or in it. So when you say water is wet, that doesn't make sense, because water cannot be soaked in itself.",
+  trace:{
+    "Interpretation":{initialUnderstandingTarget:"wet",stanceTarget:"neutral",knowledgeDomain:"no-specialized",targetExplanation:"explicitly-stated"},
+    "Analysis":{coreClaim:"nothing",minorClaim:"nothing",premise:"nothing",reasoningType:"deductive",hasAssumption:"no",missingComponent:"none"},
+    "Inference":{positiveConsequences:"clarity of definition",negativeConsequences:"none",primaryDomain:"personal",alternativeType:"applies-when",alternativeKeywords:"definition of wet"},
+    "Evaluation":{inferenceStrength:"1=Weak",credibilityFactors:"personal bias",logicalFallacy:"false cause",trustworthiness:"cannot be trusted"},
+    "Explanation":{reasoningStructure:"Uses specific cases, stories, or instances to support claims"},
+    "Self-Regulation":{biasDetection:"None detected",heuristicDetection:"None detected",errorDetection:"None detected",changeDecision:"No",revisionType:"none"}
+  },
+  questions:["Can you provide more justification for why water cannot be soaked in itself?","How do you know that water cannot be soaked in itself?","What would happen if someone were able to soak water in water?"],
+  human:{intended_weakness:"claim: the definition of 'wet' is stipulated and contested", focus_type:null, question:"How exactly are you defining 'wet', and why should that definition exclude water itself?"},
+  judge:[{correctness:null,focus_type:null},{correctness:null,focus_type:null},{correctness:null,focus_type:null}]
+}]};
+
+const PHASES=["Interpretation","Analysis","Inference","Evaluation","Explanation","Self-Regulation"];
+const FOCUS=["Other Stakeholder Perspective","Vague or Ambiguous Terms","Lacks Evidence","Implicit Existence","Overgeneralized Statement","Bias and Subjectivity","Questionable Cause-Effect Relationship","Temporal Contrast"];
+const CORR=["Correct","Partial","Wrong"];
+const CASE_NAMES={1:"Case 1 — Wrong Question, Unsupported Path",2:"Case 2 — Consistent and Correct",3:"Case 3 — Consistent but Wrong",4:"Case 4 — Correct Question, Unsupported Path"};
+
+let SET=null, IDX=0, ANN=[], annId="";
+
+function freshAnn(ex){
+  return {
+    argument_span:"", current_q:0, notes:"",
+    field_marks:{},  // "Phase/field" -> supports|contradicts|missing
+    open_phase:null,
+    questions: ex.questions.map((_,i)=>({
+      judge_correctness: ex.judge?.[i]?.correctness || "",
+      judge_focus: ex.judge?.[i]?.focus_type || "",
+      primary_field:"", label:"", confidence:"", ev_q:"", ev_t:"", ev_h:""
+    })),
+    case4:{good_target:"",break_point:"",why:"",final_judgment:""}
+  };
+}
+const EX=()=>SET.examples[IDX];
+const A=()=>ANN[IDX];
+const Q=()=>A().questions[A().current_q];
+
+/* helpers */
+function esc(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+function isFiller(v){const s=String(v??'').trim().toLowerCase();return s===''||['nothing','none','not provided','not available','n/a','na','""','[leave blank]','[none]','[n/a]'].includes(s)||(s.split(/\s+/).length===1&&s.length<=12);}
+function fieldVal(key){if(!key||key.indexOf('/')<0)return '';const[p,f]=key.split('/');return (EX().trace[p]||{})[f] ?? '';}
+function suggestPrimary(){
+  const find=(f)=>{for(const p of PHASES){if(EX().trace[p] && f in EX().trace[p])return p+'/'+f;}return null;};
+  const mc=find('missingComponent'); if(mc && !isFiller(fieldVal(mc)))return mc;
+  const lf=find('logicalFallacy');  const lv=String(fieldVal(lf)||'').toLowerCase();
+  if(lf && lv && !['no logical fallacy','none','no fallacy','no-fallacy',''].includes(lv))return lf;
+  const cc=find('coreClaim'); if(cc)return cc;
+  return mc||lf||null;
+}
+function majority(arr){const a=arr.filter(Boolean);if(!a.length)return null;const c={};a.forEach(x=>c[x]=(c[x]||0)+1);let b=a[0],n=0;a.forEach(x=>{if(c[x]>n){n=c[x];b=x;}});return b;}
+
+/* ---- load / nav ---- */
+function loadSet(s){SET=s;ANN=s.examples.map(freshAnn);IDX=0;renderAll();}
+function go(d){const n=IDX+d;if(n<0||n>=SET.examples.length)return;IDX=n;renderAll();}
+function goQ(d){const a=A();const n=a.current_q+d;if(n<0||n>=EX().questions.length)return;a.current_q=n;renderQuestion();renderCase4();renderSummary();}
+
+function renderAll(){
+  const ex=EX(),a=A();
+  if(a.open_phase===null){const sp=suggestPrimary();a.open_phase=sp?sp.split('/')[0]:'Analysis';}
+  // default primary for each question
+  a.questions.forEach(q=>{if(!q.primary_field)q.primary_field=suggestPrimary()||'';});
+  document.getElementById('annId').value=annId;
+  document.getElementById('exCounter').textContent=`Example ${IDX+1} / ${SET.examples.length}`;
+  document.getElementById('modelPill').textContent='Model: '+(ex.model||SET.model||'—');
+  const pc=document.getElementById('preCasePill');
+  pc.textContent='Pre-assigned: '+(ex.case?CASE_NAMES[ex.case].split(' — ')[0]:'none');
+  pc.className='pill '+(ex.case?('cbpill cb'+ex.case+'-pill'):'pill-grey')+' '+(ex.case===4?'pill-red':ex.case===2?'pill-green':ex.case?'pill-blue':'pill-grey');
+  // left
+  document.getElementById('argBox').textContent=ex.argument||'';
+  document.getElementById('hWeak').textContent=ex.human?.intended_weakness||'—';
+  document.getElementById('hQ').textContent=ex.human?.question||'—';
+  document.getElementById('argSpan').value=a.argument_span;
+  document.getElementById('notes').value=a.notes;
+  fillSelect('jCorr',['',...CORR],a.questions[a.current_q].judge_correctness);
+  fillSelect('jFocus',['',...FOCUS],a.questions[a.current_q].judge_focus);
+  renderPhases(); renderQuestion(); renderCase4(); renderSummary();
+}
+function fillSelect(id,opts,val){const el=document.getElementById(id);el.innerHTML=opts.map(o=>`<option ${o===val?'selected':''} value="${esc(o)}">${esc(o)||'— none —'}</option>`).join('');}
+
+/* ---- trace phases ---- */
+function renderPhases(){
+  const wrap=document.getElementById('phases');wrap.innerHTML='';
+  const a=A();const primary=Q().primary_field;
+  PHASES.forEach(p=>{
+    const fields=EX().trace[p]||{};
+    const open=a.open_phase===p;
+    const rows=Object.entries(fields).map(([f,v])=>{
+      const key=p+'/'+f, mark=a.field_marks[key];
+      const cls=[key===primary?'primary':'',mark||''].filter(Boolean).join(' ');
+      const deg=isFiller(v)?'<span class="deg">filler</span>':'';
+      return `<div class="fld ${cls}">
+        <div class="k">${esc(f)}${deg}</div>
+        <div class="val click" data-fillt="${esc(key)}">${esc(v)||'<i>—</i>'}</div>
+        <div class="fbtns">
+          <button class="fbtn ${key===primary?'on-primary':''}" data-prim="${esc(key)}">★ primary</button>
+          <button class="fbtn ${mark==='supports'?'on-supports':''}" data-mark="supports" data-key="${esc(key)}">✓ supports</button>
+          <button class="fbtn ${mark==='contradicts'?'on-contradicts':''}" data-mark="contradicts" data-key="${esc(key)}">✗ contradicts</button>
+          <button class="fbtn ${mark==='missing'?'on-missing':''}" data-mark="missing" data-key="${esc(key)}">∅ missing</button>
+        </div></div>`;
+    }).join('') || '<div class="muted">—</div>';
+    wrap.insertAdjacentHTML('beforeend',
+      `<div class="phase ${open?'open':''}"><div class="phase-h" data-phase="${p}"><span>${p}</span><span class="chev">▸</span></div><div class="phase-b">${rows}</div></div>`);
+  });
+  // events
+  wrap.querySelectorAll('[data-phase]').forEach(el=>el.onclick=()=>{a.open_phase=a.open_phase===el.dataset.phase?null:el.dataset.phase;renderPhases();});
+  wrap.querySelectorAll('[data-prim]').forEach(el=>el.onclick=()=>{Q().primary_field=el.dataset.prim;if(!Q().ev_t)Q().ev_t=el.dataset.prim+' = '+fieldVal(el.dataset.prim);renderPhases();renderQuestion();});
+  wrap.querySelectorAll('[data-mark]').forEach(el=>el.onclick=()=>{const k=el.dataset.key;a.field_marks[k]=a.field_marks[k]===el.dataset.mark?undefined:el.dataset.mark;renderPhases();renderCase4();});
+  wrap.querySelectorAll('[data-fillt]').forEach(el=>el.onclick=()=>{const k=el.dataset.fillt;Q().ev_t=k+' = '+fieldVal(k);document.getElementById('evT').value=Q().ev_t;});
+}
+
+/* ---- question card ---- */
+function renderQuestion(){
+  const a=A(),q=Q();
+  document.getElementById('qCounter').textContent=`Question ${a.current_q+1} / ${EX().questions.length}`;
+  document.getElementById('qText').textContent=EX().questions[a.current_q]||'';
+  document.getElementById('qJudgeCorr').textContent='judge: '+(q.judge_correctness||'—');
+  document.getElementById('qJudgeFocus').textContent='FOCUS: '+(q.judge_focus||'—');
+  fillSelect('jCorr',['',...CORR],q.judge_correctness);
+  fillSelect('jFocus',['',...FOCUS],q.judge_focus);
+  document.getElementById('primKey').textContent='primary field: '+(q.primary_field||'(none selected)');
+  document.getElementById('primVal').textContent=q.primary_field?(fieldVal(q.primary_field)||'—'):'—';
+  document.getElementById('btnFollows').classList.toggle('sel',q.label==='FOLLOWS');
+  document.getElementById('btnContradicts').classList.toggle('sel',q.label==='CONTRADICTS');
+  const lp=document.getElementById('qLabelPill');
+  lp.textContent=q.label||'unlabeled'; lp.className='pill '+(q.label==='FOLLOWS'?'pill-green':q.label==='CONTRADICTS'?'pill-red':'pill-grey');
+  document.querySelectorAll('#confSeg button').forEach(b=>b.classList.toggle('on',b.dataset.c===q.confidence));
+  document.getElementById('evQ').value=q.ev_q;
+  document.getElementById('evT').value=q.ev_t;
+  document.getElementById('evH').value=q.ev_h;
+}
+
+/* ---- case 4 ---- */
+function impliedCase(){
+  const a=A();
+  const lab=majority(a.questions.map(q=>q.label));
+  const corr=majority(a.questions.map(q=>q.judge_correctness));
+  if(!lab||!corr)return null;
+  const C=corr==='Correct', S=lab==='FOLLOWS';
+  return !C&&!S?1:C&&S?2:!C&&S?3:4;
+}
+function renderCase4(){
+  const a=A();
+  const q=Q();
+  const show=(impliedCase()===4)||(q.judge_correctness==='Correct'&&q.label==='CONTRADICTS')||(EX().case===4);
+  document.getElementById('case4').style.display=show?'block':'none';
+  if(!show)return;
+  const marks=a.field_marks;
+  const list=(t)=>Object.entries(marks).filter(([,v])=>v===t).map(([k])=>k);
+  const chip=(arr,c)=>arr.length?arr.map(k=>`<span class="chip ${c}">${esc(k)}</span>`).join(''):'<span class="muted">— mark fields in the trace —</span>';
+  document.getElementById('c4support').innerHTML=chip(list('supports'),'s');
+  document.getElementById('c4contra').innerHTML=chip(list('contradicts'),'c');
+  document.getElementById('c4missing').innerHTML=chip(list('missing'),'m');
+  document.getElementById('c4target').value=a.case4.good_target;
+  document.getElementById('c4why').value=a.case4.why;
+  fillSelect('c4break',['',...PHASES,'Question Generation'],a.case4.break_point);
+  document.querySelectorAll('#c4final button').forEach(b=>b.classList.toggle('on',b.dataset.v===a.case4.final_judgment));
+}
+
+/* ---- summary + progress ---- */
+function renderSummary(){
+  const a=A(),q=Q();
+  const lab=majority(a.questions.map(x=>x.label));
+  const corr=majority(a.questions.map(x=>x.judge_correctness));
+  const ic=impliedCase();
+  document.getElementById('sQ').textContent=q.label||'—';
+  document.getElementById('sMaj').textContent=lab||'—';
+  document.getElementById('sCorr').textContent=corr||'—';
+  document.getElementById('sImplied').textContent=ic?CASE_NAMES[ic].split(' — ')[0]:'—';
+  const pre=EX().case;
+  document.getElementById('sMatch').textContent=(ic&&pre)?(ic===pre?'✓ match':'⚠ differs'):'—';
+  const cb=document.getElementById('caseBanner');
+  cb.className='casebanner '+(ic?'cb'+ic:'cb1');
+  cb.textContent=ic?('Implied: '+CASE_NAMES[ic])+(pre&&ic!==pre?'   (pre-assigned: '+CASE_NAMES[pre].split(' — ')[0]+')':''):'Implied case: — (label the questions)';
+  // completion across whole set
+  let tot=0,done=0;
+  SET.examples.forEach((ex,i)=>ex.questions.forEach((_,j)=>{tot++;if(ANN[i].questions[j].label)done++;}));
+  const pct=tot?Math.round(done/tot*100):0;
+  document.getElementById('compBar').style.width=pct+'%';
+  document.getElementById('compLabel').textContent='Completion '+pct+'% ('+done+'/'+tot+' questions)';
+  document.getElementById('sComp').textContent=pct+'%';
+}
+
+/* ---- validation + export ---- */
+function validateCurrent(){
+  const a=A(),m=[];
+  if(!a.argument_span.trim())m.push('Argument evidence span');
+  a.questions.forEach((q,i)=>{
+    if(!q.label)m.push('Q'+(i+1)+': FOLLOWS/CONTRADICTS label');
+    else{
+      if(!q.ev_q.trim())m.push('Q'+(i+1)+': evidence from question');
+      if(!q.ev_t.trim())m.push('Q'+(i+1)+': evidence from trace');
+      if(!q.ev_h.trim())m.push('Q'+(i+1)+': evidence from human/judge');
+    }
+  });
+  if(impliedCase()===4){
+    if(!a.case4.good_target.trim())m.push('Case 4: good question target');
+    if(!a.case4.break_point)m.push('Case 4: main break point');
+    if(!a.case4.final_judgment)m.push('Case 4: final judgment');
+  }
+  return m;
+}
+function buildExport(i){
+  const ex=SET.examples[i],a=ANN[i];
+  const lab=majority(a.questions.map(q=>q.label));
+  const corr=majority(a.questions.map(q=>q.judge_correctness));
+  const ic=(()=>{if(!lab||!corr)return null;const C=corr==='Correct',S=lab==='FOLLOWS';return !C&&!S?1:C&&S?2:!C&&S?3:4;})();
+  const marks=a.field_marks;
+  const list=t=>Object.entries(marks).filter(([,v])=>v===t).map(([k])=>k);
+  return {
+    example_id:ex.example_id, annotator_id:annId||null, model:ex.model||SET.model||null,
+    pre_assigned_case:ex.case||null, pre_assigned_case_name:ex.case_name||null,
+    trace_jac:ex.trace_jac??null, judge_semantic_equivalence:ex.judge_semantic_equivalence??null,
+    per_question:a.questions.map((q,j)=>({
+      index:j+1, question:ex.questions[j],
+      judge_correctness:q.judge_correctness||null, judge_focus_type:q.judge_focus||null,
+      selected_primary_trace_field:q.primary_field||null, primary_trace_value:q.primary_field?fieldVal(q.primary_field):null,
+      consistency_label:q.label||null, confidence:q.confidence||null,
+      evidence_from_question:q.ev_q, evidence_from_trace:q.ev_t, evidence_from_human:q.ev_h
+    })),
+    field_marks:marks, fields_support:list('supports'), fields_contradict:list('contradicts'), fields_missing:list('missing'),
+    consistency_label:lab||null, question_correctness:corr||null,
+    implied_case:ic, implied_case_name:ic?CASE_NAMES[ic]:null,
+    case_agreement:(ic&&ex.case)?(ic===ex.case):null,
+    case4: ic===4 ? {
+      good_question_target:a.case4.good_target, fields_support:list('supports'),
+      fields_contradict:list('contradicts'), fields_missing:list('missing'),
+      main_break_point:a.case4.break_point, why_not_derivable:a.case4.why,
+      final_judgment:a.case4.final_judgment, consistency_judgment:'CONTRADICTS'
+    } : null,
+    notes:a.notes
+  };
+}
+function download(obj,name){const b=new Blob([JSON.stringify(obj,null,2)],{type:'application/json'});const u=document.createElement('a');u.href=URL.createObjectURL(b);u.download=name;u.click();URL.revokeObjectURL(u.href);}
+function showOut(t){const p=document.getElementById('out');p.textContent=t;p.classList.add('show');}
+
+document.getElementById('expBtn').onclick=()=>{
+  const m=validateCurrent(),w=document.getElementById('warn');
+  if(m.length){w.classList.add('show');w.innerHTML='<b>Incomplete (this example):</b><ul>'+m.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>';w.scrollIntoView({behavior:'smooth',block:'nearest'});return;}
+  w.classList.remove('show');
+  const o=buildExport(IDX);showOut(JSON.stringify(o,null,2));download(o,(EX().example_id||'annotation')+'__'+(annId||'anon')+'.json');
+};
+document.getElementById('expAllBtn').onclick=()=>{
+  const all=SET.examples.map((_,i)=>buildExport(i));
+  const o={model:SET.model,annotator_id:annId||null,n:all.length,annotations:all};
+  showOut(JSON.stringify(o,null,2));download(o,(SET.model_key||'set')+'__ALL__'+(annId||'anon')+'.json');
+};
+
+/* ---- bindings ---- */
+document.getElementById('annId').oninput=e=>{annId=e.target.value;};
+document.getElementById('argSpan').oninput=e=>{A().argument_span=e.target.value;renderSummary();};
+document.getElementById('notes').oninput=e=>{A().notes=e.target.value;};
+document.getElementById('jCorr').onchange=e=>{Q().judge_correctness=e.target.value;renderQuestion();renderCase4();renderSummary();};
+document.getElementById('jFocus').onchange=e=>{Q().judge_focus=e.target.value;renderQuestion();};
+document.getElementById('hWeak').onclick=()=>{Q().ev_h=document.getElementById('hWeak').textContent;document.getElementById('evH').value=Q().ev_h;};
+document.getElementById('hQ').onclick=()=>{Q().ev_h=document.getElementById('hQ').textContent;document.getElementById('evH').value=Q().ev_h;};
+document.getElementById('qText').onclick=()=>{Q().ev_q=EX().questions[A().current_q];document.getElementById('evQ').value=Q().ev_q;};
+document.getElementById('btnFollows').onclick=()=>{Q().label='FOLLOWS';renderQuestion();renderCase4();renderSummary();};
+document.getElementById('btnContradicts').onclick=()=>{Q().label='CONTRADICTS';renderQuestion();renderCase4();renderSummary();};
+document.querySelectorAll('#confSeg button').forEach(b=>b.onclick=()=>{Q().confidence=Q().confidence===b.dataset.c?'':b.dataset.c;renderQuestion();});
+document.getElementById('evQ').oninput=e=>Q().ev_q=e.target.value;
+document.getElementById('evT').oninput=e=>Q().ev_t=e.target.value;
+document.getElementById('evH').oninput=e=>Q().ev_h=e.target.value;
+document.getElementById('c4target').oninput=e=>A().case4.good_target=e.target.value;
+document.getElementById('c4why').oninput=e=>A().case4.why=e.target.value;
+document.getElementById('c4break').onchange=e=>A().case4.break_point=e.target.value;
+document.querySelectorAll('#c4final button').forEach(b=>b.onclick=()=>{A().case4.final_judgment=A().case4.final_judgment===b.dataset.v?'':b.dataset.v;renderCase4();});
+document.getElementById('prevBtn').onclick=()=>go(-1);
+document.getElementById('nextBtn').onclick=()=>go(1);
+document.getElementById('qPrev').onclick=()=>goQ(-1);
+document.getElementById('qNext').onclick=()=>goQ(1);
+document.getElementById('loadBtn').onclick=()=>document.getElementById('file').click();
+document.getElementById('file').onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();
+  r.onload=()=>{try{const j=JSON.parse(r.result);loadSet(j.examples?j:{model:f.name,examples:Array.isArray(j)?j:[j]});}catch(err){alert('Invalid JSON: '+err.message);}};r.readAsText(f);};
+
+/* init */
+loadSet(SAMPLE);
+</script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+model,annotator,question_position,coverage_valid,coverage_total,Judge_ReasoningDepth,Judge_ReasoningDepth_std,Judge_ContextualRelevance,Judge_ContextualRelevance_std,Judge_CriticalThinking,Judge_CriticalThinking_std,Judge_PedagogicalEquiv,Judge_PedagogicalEquiv_std,Judge_SemanticEquiv,Judge_SemanticEquiv_std,Judge_FocusAppropriateness,Judge_FocusAppropriateness_std,Judge_Composite,Judge_Composite_std
+gpt-4o_baseline,p,1,120,120,3.9667,0.5153,4.8500,0.4213,4.0833,0.4758,3.4000,1.1358,3.4167,1.1517,4.6417,0.5597,4.0597,0.5417
+gpt-4o_baseline,p,2,120,120,3.8000,0.5260,4.7583,0.5627,3.8833,0.5654,3.0583,1.0747,3.0917,1.0567,4.3667,0.6944,3.8264,0.5719
+gpt-4o_baseline,p,3,120,120,3.8167,0.5914,4.4083,0.8897,3.8667,0.5617,3.0333,1.1686,3.0167,1.1618,4.2750,0.8847,3.7361,0.7238
+gpt-4o_baseline,p,overall,360,360,3.8611,0.5504,4.6722,0.6818,3.9444,0.5449,3.1639,1.1394,3.1750,1.1377,4.4278,0.7418,3.8741,0.6325

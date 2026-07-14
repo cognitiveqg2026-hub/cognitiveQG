@@ -1,0 +1,227 @@
+{
+  "n_arguments": 14,
+  "wilcoxon_oracle_vs_baseline": {
+    "statistic": 33.0,
+    "p_value": 0.5,
+    "confirmed": false
+  },
+  "wilcoxon_noise_vs_baseline": {
+    "statistic": 17.0,
+    "p_value": 0.13251859347970968,
+    "confirmed": false
+  },
+  "wilcoxon_vanilla_vs_baseline": {
+    "statistic": 19.5,
+    "p_value": 0.7127018566581784,
+    "shortcut_supported": true
+  },
+  "wilcoxon_oracle_vs_noise": {
+    "statistic": 46.0,
+    "p_value": 0.10900697692447797,
+    "confirmed": false
+  },
+  "effect_sizes": {
+    "oracle_vs_baseline": {
+      "mean_delta": -5.551115123125783e-17,
+      "median_delta": 0.0,
+      "bootstrap_95ci": [
+        -0.16666666666666669,
+        0.16666666666666666
+      ]
+    },
+    "oracle_vs_noise": {
+      "mean_delta": 0.11904761904761899,
+      "median_delta": 0.16666666666666666,
+      "bootstrap_95ci": [
+        -0.07142857142857141,
+        0.2857142857142857
+      ]
+    }
+  },
+  "manipulation_check": {
+    "noise_ac1_mean": 0.0,
+    "baseline_ac1_mean": 0.4321806274168752,
+    "oracle_ac1": 1.0,
+    "passed": true
+  },
+  "kl_divergence_from_human": {
+    "vanilla": 0.5246616502203161,
+    "baseline": 2.423746207990212,
+    "oracle_gold": 1.0200481683130542,
+    "noise": 2.4622326419716227
+  },
+  "condition_means": {
+    "vanilla": {
+      "match_rate": 0.40476190476190477,
+      "ac1": null
+    },
+    "noise": {
+      "match_rate": 0.2380952380952381,
+      "ac1": 0.0
+    },
+    "baseline": {
+      "match_rate": 0.35714285714285715,
+      "ac1": 0.4321806274168752
+    },
+    "oracle_gold": {
+      "match_rate": 0.3571428571428571,
+      "ac1": 1.0
+    }
+  },
+  "per_argument": [
+    {
+      "arg_index": 1,
+      "human_dominant": "Lacks Evidence",
+      "vanilla_mr": 0.3333333333333333,
+      "noise_mr": 0.0,
+      "baseline_mr": 0.0,
+      "oracle_mr": 0.3333333333333333,
+      "noise_ac1": 0.0,
+      "baseline_ac1": 0.5158924205378973,
+      "oracle_ac1": 1.0
+    },
+    {
+      "arg_index": 2,
+      "human_dominant": "Vague or Ambiguous Terms",
+      "vanilla_mr": 0.0,
+      "noise_mr": 0.0,
+      "baseline_mr": 0.6666666666666666,
+      "oracle_mr": 0.3333333333333333,
+      "noise_ac1": 0.0,
+      "baseline_ac1": 0.6338983050847458,
+      "oracle_ac1": 1.0
+    },
+    {
+      "arg_index": 5,
+      "human_dominant": "Other Stakeholder Perspective",
+      "vanilla_mr": 0.3333333333333333,
+      "noise_mr": 0.0,
+      "baseline_mr": 0.6666666666666666,
+      "oracle_mr": 0.6666666666666666,
+      "noise_ac1": 0.0,
+      "baseline_ac1": 0.2682926829268293,
+      "oracle_ac1": 1.0
+    },
+    {
+      "arg_index": 6,
+      "human_dominant": "Vague or Ambiguous Terms",
+      "vanilla_mr": 0.3333333333333333,
+      "noise_mr": 0.0,
+      "baseline_mr": 0.3333333333333333,
+      "oracle_mr": 0.0,
+      "noise_ac1": 0.0,
+      "baseline_ac1": 0.3910690121786197,
+      "oracle_ac1": 1.0
+    },
+    {
+      "arg_index": 7,
+      "human_dominant": "Other Stakeholder Perspective",
+      "vanilla_mr": 0.0,
+      "noise_mr": 0.3333333333333333,
+      "baseline_mr": 0.6666666666666666,
+      "oracle_mr": 0.0,
+      "noise_ac1": 0.0,
+      "baseline_ac1": 0.39523518631643245,
+      "oracle_ac1": 1.0
+    },
+    {
+      "arg_index": 8,
+      "human_dominant": "Bias and Subjectivity",
+      "vanilla_mr": 0.3333333333333333,
+      "noise_mr": 0.0,
+      "baseline_mr": 0.0,
+      "oracle_mr": 0.3333333333333333,
+      "noise_ac1": 0.0,
+      "baseline_ac1": 0.5121951219512195,
+      "oracle_ac1": 1.0
+    },
+    {
+      "arg_index": 9,
+      "human_dominant": "Other Stakeholder Perspective",
+      "vanilla_mr": 0.6666666666666666,
+      "noise_mr": 0.6666666666666666,
+      "baseline_mr": 0.6666666666666666,
+      "oracle_mr": 0.3333333333333333,
+      "noise_ac1": 0.0,
+      "baseline_ac1": 0.3668341708542714,
+      "oracle_ac1": 1.0
+    },
+    {
+      "arg_index": 12,
+      "human_dominant": "Other Stakeholder Perspective",
+      "vanilla_mr": 0.3333333333333333,
+      "noise_mr": 0.3333333333333333,
+      "baseline_mr": 0.0,
+      "oracle_mr": 0.3333333333333333,
+      "noise_ac1": 0.0,
+      "baseline_ac1": 0.5116279069767441,
+      "oracle_ac1": 1.0
+    },
+    {
+      "arg_index": 13,
+      "human_dominant": "Vague or Ambiguous Terms",
+      "vanilla_mr": 0.6666666666666666,
+      "noise_mr": 0.0,
+      "baseline_mr": 0.3333333333333333,
+      "oracle_mr": 0.6666666666666666,
+      "noise_ac1": 0.0,
+      "baseline_ac1": 0.6692913385826772,
+      "oracle_ac1": 1.0
+    },
+    {
+      "arg_index": 14,
+      "human_dominant": "Vague or Ambiguous Terms",
+      "vanilla_mr": 0.3333333333333333,
+      "noise_mr": 0.6666666666666666,
+      "baseline_mr": 0.3333333333333333,
+      "oracle_mr": 0.3333333333333333,
+      "noise_ac1": 0.0,
+      "baseline_ac1": 0.2602739726027397,
+      "oracle_ac1": 1.0
+    },
+    {
+      "arg_index": 15,
+      "human_dominant": "Other Stakeholder Perspective",
+      "vanilla_mr": 0.3333333333333333,
+      "noise_mr": 0.0,
+      "baseline_mr": 0.3333333333333333,
+      "oracle_mr": 0.0,
+      "noise_ac1": 0.0,
+      "baseline_ac1": 0.3948655256723716,
+      "oracle_ac1": 1.0
+    },
+    {
+      "arg_index": 16,
+      "human_dominant": "Other Stakeholder Perspective",
+      "vanilla_mr": 0.6666666666666666,
+      "noise_mr": 0.3333333333333333,
+      "baseline_mr": 0.3333333333333333,
+      "oracle_mr": 0.6666666666666666,
+      "noise_ac1": 0.0,
+      "baseline_ac1": 0.5879828326180258,
+      "oracle_ac1": 1.0
+    },
+    {
+      "arg_index": 18,
+      "human_dominant": "Vague or Ambiguous Terms",
+      "vanilla_mr": 0.6666666666666666,
+      "noise_mr": 0.3333333333333333,
+      "baseline_mr": 0.6666666666666666,
+      "oracle_mr": 0.6666666666666666,
+      "noise_ac1": 0.0,
+      "baseline_ac1": 0.274282223579719,
+      "oracle_ac1": 1.0
+    },
+    {
+      "arg_index": 19,
+      "human_dominant": "Lacks Evidence",
+      "vanilla_mr": 0.6666666666666666,
+      "noise_mr": 0.6666666666666666,
+      "baseline_mr": 0.0,
+      "oracle_mr": 0.3333333333333333,
+      "noise_ac1": 0.0,
+      "baseline_ac1": 0.2687880839539607,
+      "oracle_ac1": 1.0
+    }
+  ]
+}

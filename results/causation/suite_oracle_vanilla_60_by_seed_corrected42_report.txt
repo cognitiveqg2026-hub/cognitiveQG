@@ -1,0 +1,137 @@
+Trace Correlation Suite Report
+==============================
+
+Model label: LLaMA2 Oracle Vanilla 60
+Mode: by-seed
+Pipeline: results/oracle_vanilla_60args_2026-05-07.json
+Gold: data/dev1-6_A1/a1_combined_all_instances_with_ids.json
+Human focus: results/focus_classification_human_p_60args_2026-05-08.json
+LLM focus: results/focus_classification_oracle_vanilla_60args_sampleid_2026-05-08.json
+Precomputed focus data: 
+
+Row Summary
+-----------
+Rows: 179
+Samples: 60
+Seeds: [42, 43, 44]
+Mean focus match: 0.5121
+Diagnostics: {'missing_seed_focus': 1}
+
+Equations
+---------
+rq3_three_component: (15/42) * Gwet_AC1 + (5/42) * Multi_Jaccard + (22/42) * Span_Jaccard
+full_schema_three_component: (15/45) * Gwet_AC1 + (5/45) * Multi_Jaccard + (25/45) * Span_Jaccard
+two_component_rq3: (9/26) * CategoricalAlignment + (17/26) * SpanTextAlignment
+legacy_static: 0.6921 * Gwet_AC1 + 0.3079 * Jaccard
+
+Correlations
+------------
+cat15_gwet_ac1: n=179, r=-0.0059, p=0.938027, rho=-0.0460, rho_p=0.541245
+cat9_gwet_ac1: n=179, r=-0.0178, p=0.813121, rho=-0.0352, rho_p=0.639464
+multi_jaccard: n=179, r=-0.1000, p=0.183032, rho=-0.0672, rho_p=0.371619
+span22_jaccard: n=179, r=-0.0380, p=0.613829, rho=-0.1078, rho_p=0.150726
+span25_jaccard: n=179, r=-0.0390, p=0.604620, rho=-0.1105, rho_p=0.141020
+span17_jaccard: n=179, r=-0.0426, p=0.571065, rho=-0.0984, rho_p=0.190066
+rq3_three_component: n=179, r=-0.0523, p=0.486932, rho=-0.0805, rho_p=0.284324
+full_schema_three_component: n=179, r=-0.0526, p=0.483957, rho=-0.0797, rho_p=0.288886
+two_component_rq3: n=179, r=-0.0367, p=0.625477, rho=-0.0781, rho_p=0.298596
+legacy_static: n=179, r=-0.0244, p=0.746006, rho=-0.0531, rho_p=0.480313
+
+Mismatch Diagnostics
+--------------------
+
+rq3_three_component
+High trace / low match:
+  45:42: score=0.3818, match=0.333, cat15=0.669, multi=0.600, span22=0.137
+  1:44: score=0.3802, match=0.000, cat15=0.584, multi=0.750, span22=0.157
+  26:44: score=0.3778, match=0.333, cat15=0.756, multi=0.750, span22=0.036
+  38:43: score=0.3675, match=0.000, cat15=0.609, multi=0.750, span22=0.116
+  15:43: score=0.3617, match=0.333, cat15=0.509, multi=1.000, span22=0.116
+  38:44: score=0.3547, match=0.000, cat15=0.567, multi=0.750, span22=0.120
+  33:42: score=0.3533, match=0.333, cat15=0.462, multi=0.500, span22=0.246
+  15:42: score=0.3519, match=0.333, cat15=0.509, multi=1.000, span22=0.097
+  43:42: score=0.3392, match=0.000, cat15=0.381, multi=0.600, span22=0.251
+  33:44: score=0.3377, match=0.333, cat15=0.419, multi=0.500, span22=0.246
+Low trace / high match:
+  42:43: score=0.0091, match=0.667, cat15=0.026, multi=0.000, span22=0.000
+  29:42: score=0.0215, match=0.667, cat15=-0.067, multi=0.000, span22=0.087
+  52:42: score=0.0655, match=0.667, cat15=0.183, multi=0.000, span22=0.000
+  23:44: score=0.0864, match=0.667, cat15=0.230, multi=0.000, span22=0.008
+  59:43: score=0.1078, match=1.000, cat15=0.295, multi=0.000, span22=0.005
+  30:44: score=0.1094, match=0.667, cat15=0.167, multi=0.250, span22=0.038
+  52:43: score=0.1095, match=1.000, cat15=0.302, multi=0.000, span22=0.003
+  50:42: score=0.1117, match=0.667, cat15=0.254, multi=0.000, span22=0.040
+  44:42: score=0.1208, match=0.667, cat15=0.193, multi=0.400, span22=0.008
+  6:42: score=0.1277, match=0.667, cat15=0.144, multi=0.250, span22=0.089
+
+full_schema_three_component
+High trace / low match:
+  45:42: score=0.3540, match=0.333, cat15=0.669, multi=0.600, span22=0.137
+  26:44: score=0.3517, match=0.333, cat15=0.756, multi=0.750, span22=0.036
+  1:44: score=0.3500, match=0.000, cat15=0.584, multi=0.750, span22=0.157
+  38:43: score=0.3410, match=0.000, cat15=0.609, multi=0.750, span22=0.116
+  15:43: score=0.3346, match=0.333, cat15=0.509, multi=1.000, span22=0.116
+  38:44: score=0.3290, match=0.000, cat15=0.567, multi=0.750, span22=0.120
+  15:42: score=0.3259, match=0.333, cat15=0.509, multi=1.000, span22=0.097
+  33:42: score=0.3256, match=0.333, cat15=0.462, multi=0.500, span22=0.246
+  43:42: score=0.3134, match=0.000, cat15=0.381, multi=0.600, span22=0.251
+  33:44: score=0.3111, match=0.333, cat15=0.419, multi=0.500, span22=0.246
+Low trace / high match:
+  42:43: score=0.0085, match=0.667, cat15=0.026, multi=0.000, span22=0.000
+  29:42: score=0.0186, match=0.667, cat15=-0.067, multi=0.000, span22=0.087
+  52:42: score=0.0611, match=0.667, cat15=0.183, multi=0.000, span22=0.000
+  23:44: score=0.0806, match=0.667, cat15=0.230, multi=0.000, span22=0.008
+  59:43: score=0.1006, match=1.000, cat15=0.295, multi=0.000, span22=0.005
+  30:44: score=0.1016, match=0.667, cat15=0.167, multi=0.250, span22=0.038
+  52:43: score=0.1022, match=1.000, cat15=0.302, multi=0.000, span22=0.003
+  50:42: score=0.1040, match=0.667, cat15=0.254, multi=0.000, span22=0.040
+  44:42: score=0.1127, match=0.667, cat15=0.193, multi=0.400, span22=0.008
+  6:42: score=0.1168, match=0.667, cat15=0.144, multi=0.250, span22=0.089
+
+two_component_rq3
+High trace / low match:
+  45:42: score=0.5111, match=0.333, cat15=0.669, multi=0.600, span22=0.137
+  33:42: score=0.4223, match=0.333, cat15=0.462, multi=0.500, span22=0.246
+  43:42: score=0.4147, match=0.000, cat15=0.381, multi=0.600, span22=0.251
+  1:44: score=0.4079, match=0.000, cat15=0.584, multi=0.750, span22=0.157
+  33:44: score=0.4023, match=0.333, cat15=0.419, multi=0.500, span22=0.246
+  43:44: score=0.3784, match=0.333, cat15=0.383, multi=0.200, span22=0.214
+  26:44: score=0.3730, match=0.333, cat15=0.756, multi=0.750, span22=0.036
+  38:43: score=0.3682, match=0.000, cat15=0.609, multi=0.750, span22=0.116
+  39:42: score=0.3655, match=0.333, cat15=0.469, multi=0.600, span22=0.136
+  39:43: score=0.3655, match=0.000, cat15=0.469, multi=0.600, span22=0.136
+Low trace / high match:
+  42:43: score=0.0245, match=0.667, cat15=0.026, multi=0.000, span22=0.000
+  29:42: score=0.0487, match=0.667, cat15=-0.067, multi=0.000, span22=0.087
+  52:42: score=0.0634, match=0.667, cat15=0.183, multi=0.000, span22=0.000
+  30:43: score=0.0780, match=0.667, cat15=0.052, multi=0.750, span22=0.059
+  13:44: score=0.0956, match=0.667, cat15=0.134, multi=0.500, span22=0.049
+  23:44: score=0.1029, match=0.667, cat15=0.230, multi=0.000, span22=0.008
+  52:43: score=0.1076, match=1.000, cat15=0.302, multi=0.000, span22=0.003
+  30:44: score=0.1118, match=0.667, cat15=0.167, multi=0.250, span22=0.038
+  10:43: score=0.1288, match=1.000, cat15=0.286, multi=0.500, span22=0.000
+  44:42: score=0.1293, match=0.667, cat15=0.193, multi=0.400, span22=0.008
+
+legacy_static
+High trace / low match:
+  45:42: score=0.7698, match=0.333, cat15=0.669, multi=0.600, span22=0.137
+  26:44: score=0.7047, match=0.333, cat15=0.756, multi=0.750, span22=0.036
+  1:44: score=0.6157, match=0.000, cat15=0.584, multi=0.750, span22=0.157
+  22:43: score=0.6022, match=0.333, cat15=0.675, multi=0.500, span22=0.016
+  22:44: score=0.6016, match=0.333, cat15=0.675, multi=0.500, span22=0.023
+  38:43: score=0.5720, match=0.000, cat15=0.609, multi=0.750, span22=0.116
+  57:44: score=0.5389, match=0.333, cat15=0.568, multi=0.750, span22=0.073
+  33:42: score=0.5078, match=0.333, cat15=0.462, multi=0.500, span22=0.246
+  39:42: score=0.5075, match=0.333, cat15=0.469, multi=0.600, span22=0.136
+  39:43: score=0.5075, match=0.000, cat15=0.469, multi=0.600, span22=0.136
+Low trace / high match:
+  29:42: score=-0.0252, match=0.667, cat15=-0.067, multi=0.000, span22=0.087
+  42:43: score=0.0289, match=0.667, cat15=0.026, multi=0.000, span22=0.000
+  30:43: score=0.0675, match=0.667, cat15=0.052, multi=0.750, span22=0.059
+  52:42: score=0.1269, match=0.667, cat15=0.183, multi=0.000, span22=0.000
+  13:44: score=0.1313, match=0.667, cat15=0.134, multi=0.500, span22=0.049
+  5:43: score=0.1458, match=0.667, cat15=0.132, multi=0.500, span22=0.073
+  6:42: score=0.1606, match=0.667, cat15=0.144, multi=0.250, span22=0.089
+  30:44: score=0.1665, match=0.667, cat15=0.167, multi=0.250, span22=0.038
+  29:43: score=0.1754, match=0.667, cat15=0.131, multi=0.750, span22=0.164
+  9:43: score=0.1803, match=1.000, cat15=0.171, multi=0.500, span22=0.095
