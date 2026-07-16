@@ -1,1 +1,0 @@
-jobs/submit_inference_gpu.sh

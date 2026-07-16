@@ -1,1 +1,0 @@
-jobs/watch_training.sh

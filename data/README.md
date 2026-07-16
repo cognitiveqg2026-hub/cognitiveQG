@@ -7,8 +7,8 @@ expert annotator *A1*. Each entry contains the argument text and the full seven-
 trace (45 fields: interpretation, analysis, inference, evaluation, explanation,
 self-regulation, and up to three grounded Socratic questions).
 
-Inter-annotator agreement (with the second annotator, *A2*) is reported in
-`../tables/cognitiveqg-iaa-dev1-12_RESCALED.tex` — median Gwet's AC₁ = 0.88 on categorical fields.
+Inter-annotator agreement (with the second annotator, *A2*) is reported in the paper
+(Table 2) — median Gwet's AC₁ = 0.88 on categorical fields.
 
 ## `a2_dev1-12_gold.json`
 
@@ -46,4 +46,4 @@ Self-contained HTML interface the annotators used (open in any browser — no se
 ## License
 
 The CognitiveQG annotations and guidelines are released under **CC BY 4.0** — see
-`data/LICENSE`. (The repository code under `code/` is MIT-licensed; see the top-level `LICENSE`.)
+`data/LICENSE`. (The HTML annotation tool is MIT-licensed; see the top-level `LICENSE`.)

@@ -1,7 +1,0 @@
-<s>[INST] Read the following argument and generate up to 3 Socratic questions that probe its weaknesses. For each question use this exact format:
-* question: <the Socratic question>
-* target: <short phrase describing what weakness it probes>
-* sourceField: <which aspect of the argument it targets>
-
-Argument:
-{argument_text} [/INST] 7. SOCRATIC QUESTIONS (MAX 3)

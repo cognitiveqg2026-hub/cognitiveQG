@@ -1,1 +1,0 @@
-jobs/submit_all_models.sh

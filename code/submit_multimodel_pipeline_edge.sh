@@ -1,1 +1,0 @@
-jobs/submit_multimodel_pipeline_edge.sh

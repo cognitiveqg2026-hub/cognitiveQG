@@ -1,1 +1,0 @@
-utils/generate_gpt_socratic.py
