@@ -1,0 +1,237 @@
+============================================================
+P1 — FULL ANNOTATION GUIDELINE INSTRUCTION PROMPT (CognitiveQG)
+(manuscript name: P1; internal run name: P4;
+ source: prompt_ablation/P4_complete_20260704.txt — used for the
+ complete dev1-12 baseline run reported in Table 3)
+============================================================
+
+You are a critical thinking annotator trained on the CognitiveQG annotation scheme
+based on Facione's Critical Thinking Framework. Analyze the argument below through
+each of the six cognitive stages using the exact guidelines below, then generate
+3 Socratic questions.
+
+------------------------------------------------------------
+STAGE 1: INTERPRETATION
+------------------------------------------------------------
+Initial Understanding of Target:
+  - Restate the core target of the argument (Topic, Person, or Idea).
+  - Complete: "The argument talks about ___."
+
+Stance Toward the Core Target:
+  - Select: [favor | against | neutral]
+  - Identify whether the author supports, opposes, or remains neutral about the main topic.
+
+Knowledge Domain:
+  - Select one: [Technical/Scientific | Legal/Policy | Cultural/Social |
+    Economic/Business | Government/Law | No specialized knowledge]
+  - Choose the type of background knowledge needed to fully understand this argument.
+
+------------------------------------------------------------
+STAGE 2: ANALYSIS
+------------------------------------------------------------
+Argument Structure Diagnosis (identify spans):
+  - Core Claim: The main assertion — the primary point the author wants you to accept.
+  - Minor Claim: A subsidiary assertion that serves the core claim.
+  - Premise: The evidence or reason given to support the claim.
+
+Paraphrasing Initial Understanding:
+  - Paraphrase the core claim into the most simple sentence possible.
+
+Inductive vs. Deductive Reasoning:
+  - Select: [Inductive | Deductive | None of the above]
+  - Inductive = specific to general; Deductive = general to specific.
+
+Implicit Assumption:
+  - Select: [Complete | Missing Components]
+  - If missing (Missing Components), write what is needed as short keywords for the missingComponent field.
+
+------------------------------------------------------------
+STAGE 3: INFERENCE
+------------------------------------------------------------
+Consequence Prediction:
+  - Positive consequences (max 2 keywords/phrases): outcomes if argument is accepted.
+  - Negative consequences (max 2 keywords/phrases): risks if argument is accepted.
+
+Primary Domain Affected:
+  - Select one: [Personal/Physical behavior | Interpersonal relationships |
+    Social/Cultural norms | Organizational practices | Government/Policy/Law |
+    Economic systems]
+
+Alternative Possibility Recognition (choose one and provide up to 3 keywords):
+  - "...this only applies when ___, ___, ___"
+  - "...other factors are more important like ___, ___, ___"
+  - "...this misunderstands ___, ___, ___"
+
+------------------------------------------------------------
+STAGE 4: EVALUATION
+------------------------------------------------------------
+Inference Strength (rate 1–3):
+  - 3 (Strong): Premises directly and logically lead to the core claim; minimal assumptions.
+  - 2 (Moderate): Premises provide some support but require one significant assumption.
+  - 1 (Weak): Premises provide minimal support; major logical gaps.
+
+Credibility Factors (select all that apply):
+  [Personal bias | Hearsay/secondhand | Emotional reasoning | Limited expertise | None identified]
+
+Logical Fallacy (select one):
+  [No logical fallacy | False dilemma | Hasty generalization | Ad hominem |
+   Strawman | Circular reasoning | False cause]
+  - False dilemma: Presents only two options when more exist.
+  - Hasty generalization: Broad conclusion from too few examples.
+  - Ad hominem: Attacks the person rather than the argument.
+  - Strawman: Misrepresents someone's position.
+  - Circular reasoning: Conclusion used as its own evidence.
+  - False cause: Assumes causation without sufficient proof.
+
+Trustworthiness (select all that apply):
+  [Evidence-based | Logical consistency | Common knowledge | Cannot be trusted]
+
+------------------------------------------------------------
+STAGE 5: EXPLANATION
+------------------------------------------------------------
+Target Explanation:
+  "I identified [Target] as the primary target because:"
+  - It is explicitly stated as the conclusion (e.g., "therefore/thus/so").
+  - It is repeated or foregrounded through emphasis and evidence selection.
+  - It is the core causal claim (X causes Y) that drives the argument's implication.
+  - It is stated early and framed with clear evaluative language (good/bad/should).
+
+Reasoning Structure (select one and fill in spans):
+  - Specific cases: "Particular case [Span1] → supports broader principle [Span2] → therefore [Span3]"
+  - Outcomes: "If we do [Span1] → then [Span2] → therefore [Span3]"
+  - Comparison: "Situation A [Span1] is like situation B [Span2] → what is true of B applies to A [Span3]"
+  - Indicators: "Observable evidence [Span1] → suggests pattern [Span2] → indicates condition [Span3]"
+  - Expert appeal: "Source [Span1] states [Span2] → therefore [Span3] is credible"
+
+Span Role Labels (for the reasoning structure pattern you selected above):
+  For each span slot, identify the type of argument component that fills it:
+  - span1 (choose 1): major-claim | minor-claim | premise | not-available
+  - span2 (choose 1): major-claim | minor-claim | premise | not-available
+  - span3 (choose 1): major-claim | minor-claim | premise | not-available
+  Use "not-available" if the chosen reasoning structure does not use that span slot.
+
+Inductive/Deductive Template:
+  - Deductive: "General principle [Term X] → Specific conclusion [Term Y]"
+  - Inductive: "Specific instance [Term X] → General principle [Term Y]"
+
+Evidential Justification:
+  - Good evidence (keywords): evidence from the text that supports your inference.
+  - Bad evidence (keywords): weaknesses in the evidence.
+
+Trustworthiness Explanation:
+  - Explain in short keywords why the claim can or cannot be trusted.
+
+Fallacy Justification (use the appropriate template):
+  - No fallacy: Explain why the reasoning is sound.
+  - False dilemma: "Option A [Term1] vs. Option B [Term2] (missing other options)"
+  - Hasty generalization: "[Term1] is too broad / evidence is insufficient or not representative"
+  - Ad hominem: "Attacks [Person/Group] → therefore rejects [Claim] (without addressing the claim)"
+  - Strawman: "[Term1/Original position] is distorted into [Term2/Weaker position]"
+  - Circular reasoning: "[Term1/Conclusion] is used as evidence for [Term1/Conclusion]"
+  - False cause: "[Term1] does not necessarily cause [Term2] (causal link is unsupported)"
+
+------------------------------------------------------------
+STAGE 6: SELF-REGULATION
+------------------------------------------------------------
+Bias Detection (select up to 2):
+  [Fear/anxiety | First impression | Emotional reaction | Pattern matching |
+   Insufficient self-checking | None detected]
+
+Heuristic Shortcut Detection (select up to 2):
+  [Went with gut feeling | Used familiar pattern | Followed surface cues | None detected]
+
+Error Detection:
+  - Describe any potential errors in your previous reasoning, or write "None detected."
+
+Change Decision:
+  - Do you want to revise any previous response? [Yes | No]
+
+If Yes, specify:
+  - Revision Phases: Which phases would you like to revise? [Interpretation | Analysis | Inference | Evaluation | Explanation | Self-Regulation]
+  - Revision Reason: Why are you choosing to revise? (short explanation of the self-examination insight)
+  - Revision Type: How significant is your revision? [minor-adjustment | major-change | complete-revision]
+
+------------------------------------------------------------
+QUESTION GENERATION
+------------------------------------------------------------
+Based on your critical thinking analysis across all six stages, generate up to 3
+pedagogically effective Socratic questions that:
+  - Target identified weaknesses from your Evaluation stage.
+  - Probe missing assumptions discovered in your Analysis.
+  - Challenge inferences about consequences from your Inference stage.
+  - Question the author's reasoning patterns you identified.
+  - Encourage deeper thinking about the argument's foundations.
+
+For each question, also cite the source field it draws from (e.g., coreClaim,
+premise, assumption, logicalFallacy, alternativeKeywords, etc.) to ground it in
+your reasoning trace.
+
+
+------------------------------------------------------------
+OUTPUT TEMPLATE — fill in every field exactly as shown below.
+Copy this structure and replace the placeholder text with your answers.
+------------------------------------------------------------
+
+1. INTERPRETATION
+initialUnderstandingTarget: [copy a short phrase from the argument — e.g., "The argument talks about X"]
+stanceTarget: against
+knowledgeDomain: Cultural/Social
+
+2. ANALYSIS
+coreClaim: [copy a short phrase from the argument]
+minorClaim: [copy a short phrase, or leave blank]
+premise: [copy a short phrase from the argument]
+paraphrasingUnderstanding: [one simple sentence paraphrasing the core claim]
+reasoningType: Inductive
+hasAssumption: No=Missing Components
+missingComponent: [short keywords if Missing Components, else leave blank]
+
+3. INFERENCE
+positiveConsequences: [keyword1; keyword2]
+negativeConsequences: [keyword1; keyword2]
+primaryDomain: Social/Cultural norms
+alternativeType: applies when
+alternativeKeywords: [keyword1; keyword2; keyword3]
+
+4. EVALUATION
+inferenceStrength: 1=Weak
+credibilityFactors: Personal bias; Limited expertise
+logicalFallacy: No logical fallacy
+trustworthiness: Cannot be trusted
+
+5. EXPLANATION
+targetExplanationReason: It is explicitly stated as the conclusion (e.g., "therefore/thus/so").
+reasoningStructure: Uses specific cases, stories, or instances to support claims
+span1: premise
+span2: not-available
+span3: major-claim
+deductiveTermX: [general principle phrase — fill ONLY if reasoningType is Deductive; else leave blank]
+deductiveTermY: [specific conclusion phrase — fill ONLY if reasoningType is Deductive; else leave blank]
+inductiveTermX: [specific instance phrase — fill ONLY if reasoningType is Inductive; else leave blank]
+inductiveTermY: [general principle phrase — fill ONLY if reasoningType is Inductive; else leave blank]
+goodEvidence: [keywords from the argument supporting the claim]
+badEvidence: [keywords showing weaknesses in the evidence]
+trustExplanation: [short keywords explaining trustworthiness assessment]
+fallacySpan1: [term if fallacy present, else leave blank]
+fallacySpan2: [term if fallacy present, else leave blank]
+noFallacyExplanation: [brief keywords why the reasoning is sound — fill ONLY if logicalFallacy is "No logical fallacy"; else leave blank]
+
+6. SELF-REGULATION
+biasDetection: None detected
+heuristicDetection: None detected
+errorDetection: None detected
+changeDecision: No
+revisionType: no-change
+
+7. SOCRATIC QUESTIONS
+1) question: [your first Socratic question targeting a weakness in the argument]
+   target: [short phrase — what weakness this probes]
+   sourceField: coreClaim
+
+2) question: [your second Socratic question]
+   target: [short phrase]
+   sourceField: premise
+
+3) question: [your third Socratic question]
+   target: [short phrase]
+   sourceField: logicalFallacy

@@ -32,6 +32,7 @@ generation), 10,800 expert annotation decisions in total.
 │   └── LICENSE                      # CC BY 4.0 (annotations)
 ├── code/                            # evaluation scripts (see table below)
 ├── iaa_core/                        # shared metric library (Gwet's AC1, Jaccard, LLM judge)
+├── prompts/                         # verbatim prompt templates (P1 baseline, GPT-5.5 judge rubric)
 ├── requirements.txt
 ├── CITATION.bib
 ├── LICENSE                          # MIT (code + annotation tool)
