@@ -1,6 +1,6 @@
 # CognitiveQG
 
-Dataset and annotation guidelines for the paper:
+Dataset, annotation guidelines, and evaluation code for the paper:
 
 > **CognitiveQG: A Diagnostic Benchmark for Reasoning-Trace Evaluation in Socratic Question Generation**
 > Anonymous Author, Anonymous Author, Anonymous Author, Anonymous Author, Anonymous Author
@@ -24,14 +24,17 @@ generation), 10,800 expert annotation decisions in total.
 ├── data/
 │   ├── a1_dev1-12_gold.json         # 120-argument expert gold annotations (A1)
 │   ├── a2_dev1-12_gold.json         # second annotator (A2), 120 args, A1-aligned -> IAA
-│   ├── guidelines/                  # annotation guidelines (Markdown + PDF)
+│   ├── guidelines/                  # annotation guidelines (PDF)
 │   │   ├── CognitiveQG-Annotaton_Guideline_final.pdf   # full seven-phase guideline
 │   │   └── Error_Analysis_guideline.pdf                # trace-question consistency (Case 3 & 4)
 │   ├── annotation_tool/             # self-contained HTML annotation interface
 │   ├── README.md                    # data format + FOCUS source pointer
 │   └── LICENSE                      # CC BY 4.0 (annotations)
+├── code/                            # evaluation scripts (see table below)
+├── iaa_core/                        # shared metric library (Gwet's AC1, Jaccard, LLM judge)
+├── requirements.txt
 ├── CITATION.bib
-├── LICENSE                          # MIT (annotation tool)
+├── LICENSE                          # MIT (code + annotation tool)
 └── MANIFEST.md
 ```
 
@@ -53,10 +56,39 @@ agreement analysis.
 
 ---
 
+## Evaluation code
+
+The `code/` directory contains the evaluation scripts used in the paper, with the shared
+metric routines in `iaa_core/`:
+
+| Script | Role in the paper |
+|---|---|
+| `compute_iaa_generic_rescaled.py` | inter-annotator agreement (Table 2) |
+| `compute_field_metrics_jac_gwet.py`, `compute_field_metrics_latex_rescaled.py` | per-field model–human alignment (RQ1a) |
+| `compute_run2_trace_scores_complete.py` | Combined Reasoning Trace Score |
+| `compute_trace_question_consistency.py`, `generate_2x2_annotation.py` | trace–question consistency + 2×2 diagnostic (RQ1b) |
+| `build_socratic_format_causation.py`, `evaluate_llm_judge.py` | trace-substitution formatting + GPT-5.5 judge scoring (RQ2) |
+
+Inter-annotator agreement is directly reproducible from the released data:
+
+```bash
+pip install -r requirements.txt
+python3 code/compute_iaa_generic_rescaled.py \
+    --a1 data/a1_dev1-12_gold.json --a2 data/a2_dev1-12_gold.json \
+    --out iaa.json
+```
+
+The remaining scripts operate on model-generated outputs (reasoning traces and Socratic
+questions), which are not distributed in this repository; they are provided to document
+the exact metric implementations used in the paper. The GPT-5.5 judge scripts additionally
+require `OPENAI_API_KEY`.
+
+---
+
 ## Data & license
 
 - **Annotations** (`data/`) — **CC BY 4.0** (see `data/LICENSE`).
-- **Annotation tool** (`data/annotation_tool/`) — **MIT** (see `LICENSE`).
+- **Code and annotation tool** — **MIT** (see `LICENSE`).
 
 The source **argument texts are not redistributed** here: the `argument` field is
 intentionally blank throughout `data/`. The arguments come from the **FOCUS**
