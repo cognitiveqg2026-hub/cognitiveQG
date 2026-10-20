@@ -1,0 +1,10 @@
+model,N,n
+llama2,280,50
+llama3,360,50
+mistral,360,50
+olmo,351,50
+qwen3,360,50
+qwen,360,50
+gpt-4o,360,50
+gpt-5.5,360,50
+POOLED,2791,400

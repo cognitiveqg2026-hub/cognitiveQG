@@ -1,0 +1,5 @@
+model,annotator,question_position,coverage_valid,coverage_total,Judge_ReasoningDepth,Judge_ReasoningDepth_std,Judge_ContextualRelevance,Judge_ContextualRelevance_std,Judge_CriticalThinking,Judge_CriticalThinking_std,Judge_PedagogicalEquiv,Judge_PedagogicalEquiv_std,Judge_SemanticEquiv,Judge_SemanticEquiv_std,Judge_FocusAppropriateness,Judge_FocusAppropriateness_std,Judge_Composite,Judge_Composite_std
+llama3_causation_vanilla,p,1,58,60,3.4000,0.9695,4.1833,1.0566,3.3667,0.9481,3.0167,1.2314,2.9667,1.2906,3.4167,1.0999,3.3917,0.9353
+llama3_causation_vanilla,p,2,58,60,3.6500,1.0137,4.1667,1.0355,3.6500,1.0137,3.1667,1.2270,3.1000,1.1930,3.5500,1.1169,3.5472,0.9623
+llama3_causation_vanilla,p,3,58,60,3.5667,1.0061,3.7000,1.1590,3.5333,0.9911,2.6333,0.9826,2.5500,1.0071,3.3333,1.1205,3.2194,0.9277
+llama3_causation_vanilla,p,overall,174,180,3.5389,1.0020,4.0167,1.1079,3.5167,0.9915,2.9389,1.1746,2.8722,1.1927,3.4333,1.1160,3.3861,0.9514

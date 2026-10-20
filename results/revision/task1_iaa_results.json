@@ -1,0 +1,174 @@
+{
+  "lsat": {
+    "Initial Understanding": [
+      0.49838027358055115,
+      20
+    ],
+    "Paraphrase of Core Claim": [
+      0.6226539611816406,
+      20
+    ],
+    "Core Claim": [
+      0.9278643727302551,
+      20
+    ],
+    "Minor Claim": [
+      0.9751322269439697,
+      11
+    ],
+    "Premise": [
+      0.8942785859107971,
+      19
+    ],
+    "Missing Component": [
+      0.5129218697547913,
+      6
+    ],
+    "Positive Consequences": [
+      0.3405861258506775,
+      20
+    ],
+    "Negative Consequences": [
+      0.3791544735431671,
+      20
+    ],
+    "Alternative Keywords": [
+      0.3210701644420624,
+      20
+    ],
+    "Trust Explanation": [
+      0.36971384286880493,
+      20
+    ],
+    "Inductive/Ded. Term X": [
+      0.6808260679244995,
+      16
+    ],
+    "Inductive/Ded. Term Y": [
+      0.8243985176086426,
+      16
+    ],
+    "Good Evidence": [
+      0.34741273522377014,
+      20
+    ],
+    "Bad Evidence": [
+      0.3649229407310486,
+      20
+    ],
+    "Fallacy Span": [
+      0.7790505290031433,
+      10
+    ],
+    "No Fallacy Explanation": [
+      0.5712772607803345,
+      8
+    ],
+    "Error Detection": [
+      null,
+      0
+    ],
+    "Revision Reason": [
+      null,
+      0
+    ],
+    "Socratic Question 1": [
+      0.41684889793395996,
+      20
+    ],
+    "Socratic Question 2": [
+      0.3666228652000427,
+      20
+    ],
+    "Socratic Question 3": [
+      0.38496890664100647,
+      20
+    ]
+  },
+  "dev112": {
+    "Initial Understanding": [
+      0.5278483629226685,
+      120
+    ],
+    "Paraphrase of Core Claim": [
+      0.5914241075515747,
+      115
+    ],
+    "Core Claim": [
+      0.8855355381965637,
+      120
+    ],
+    "Minor Claim": [
+      0.840857982635498,
+      48
+    ],
+    "Premise": [
+      0.8661998510360718,
+      114
+    ],
+    "Missing Component": [
+      0.4256652593612671,
+      47
+    ],
+    "Positive Consequences": [
+      0.4294646680355072,
+      120
+    ],
+    "Negative Consequences": [
+      0.4365217387676239,
+      120
+    ],
+    "Alternative Keywords": [
+      0.35554566979408264,
+      120
+    ],
+    "Trust Explanation": [
+      0.35444071888923645,
+      119
+    ],
+    "Inductive/Ded. Term X": [
+      0.7324575185775757,
+      74
+    ],
+    "Inductive/Ded. Term Y": [
+      0.7400282025337219,
+      74
+    ],
+    "Good Evidence": [
+      0.3924345076084137,
+      119
+    ],
+    "Bad Evidence": [
+      0.36777061223983765,
+      119
+    ],
+    "Fallacy Span": [
+      0.8328951597213745,
+      47
+    ],
+    "No Fallacy Explanation": [
+      0.41907036304473877,
+      60
+    ],
+    "Error Detection": [
+      null,
+      0
+    ],
+    "Revision Reason": [
+      null,
+      0
+    ],
+    "Socratic Question 1": [
+      0.41965338587760925,
+      120
+    ],
+    "Socratic Question 2": [
+      0.391937255859375,
+      120
+    ],
+    "Socratic Question 3": [
+      0.3880654275417328,
+      119
+    ]
+  }
+}

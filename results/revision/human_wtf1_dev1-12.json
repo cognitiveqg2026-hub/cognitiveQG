@@ -1,0 +1,158 @@
+{
+  "A2vsA1": {
+    "stanceTarget": {
+      "wtf1": 84.44045224691658,
+      "n": 120
+    },
+    "knowledgeDomain": {
+      "wtf1": 96.50655498113126,
+      "n": 119
+    },
+    "reasoningType": {
+      "wtf1": 94.11725632917685,
+      "n": 120
+    },
+    "hasAssumption": {
+      "wtf1": 87.90183004681515,
+      "n": 120
+    },
+    "primaryDomain": {
+      "wtf1": 81.00215848882874,
+      "n": 120
+    },
+    "alternativeType": {
+      "wtf1": 76.66394080114773,
+      "n": 120
+    },
+    "inferenceStrength": {
+      "wtf1": 86.4534632034632,
+      "n": 120
+    },
+    "credibilityFactors": {
+      "wtf1": 75.7854106370423,
+      "n": 119
+    },
+    "logicalFallacy": {
+      "wtf1": 92.7069716775599,
+      "n": 120
+    },
+    "trustworthiness": {
+      "wtf1": 76.58353239435742,
+      "n": 119
+    },
+    "targetExplanation": {
+      "wtf1": 89.41208710365629,
+      "n": 120
+    },
+    "reasoningStructure": {
+      "wtf1": 88.74973066149539,
+      "n": 119
+    },
+    "span1": {
+      "wtf1": 83.91410512215879,
+      "n": 111
+    },
+    "span2": {
+      "wtf1": 74.5405179615706,
+      "n": 114
+    },
+    "span3": {
+      "wtf1": 96.20708748615725,
+      "n": 112
+    },
+    "biasDetection": {
+      "wtf1": 94.51851851851852,
+      "n": 120
+    },
+    "heuristicDetection": {
+      "wtf1": 94.94252873563218,
+      "n": 120
+    },
+    "changeDecision": {
+      "wtf1": 86.22857142857143,
+      "n": 120
+    },
+    "revisionType": {
+      "wtf1": 0.0,
+      "n": 20
+    }
+  },
+  "A1vsA2": {
+    "stanceTarget": {
+      "wtf1": 83.89288108641676,
+      "n": 120
+    },
+    "knowledgeDomain": {
+      "wtf1": 97.08027852824235,
+      "n": 118
+    },
+    "reasoningType": {
+      "wtf1": 94.21607700415647,
+      "n": 120
+    },
+    "hasAssumption": {
+      "wtf1": 88.19157165439074,
+      "n": 119
+    },
+    "primaryDomain": {
+      "wtf1": 80.66450817783793,
+      "n": 120
+    },
+    "alternativeType": {
+      "wtf1": 76.66939253218561,
+      "n": 120
+    },
+    "inferenceStrength": {
+      "wtf1": 87.41032666938435,
+      "n": 118
+    },
+    "credibilityFactors": {
+      "wtf1": 74.9465575349061,
+      "n": 117
+    },
+    "logicalFallacy": {
+      "wtf1": 94.85500688569742,
+      "n": 115
+    },
+    "trustworthiness": {
+      "wtf1": 75.04080287213559,
+      "n": 118
+    },
+    "targetExplanation": {
+      "wtf1": 88.92124622967702,
+      "n": 120
+    },
+    "reasoningStructure": {
+      "wtf1": 91.08403954802259,
+      "n": 118
+    },
+    "span1": {
+      "wtf1": 86.04440562628714,
+      "n": 111
+    },
+    "span2": {
+      "wtf1": 77.0419440503474,
+      "n": 105
+    },
+    "span3": {
+      "wtf1": 96.91617365457715,
+      "n": 111
+    },
+    "biasDetection": {
+      "wtf1": 93.7257414176433,
+      "n": 118
+    },
+    "heuristicDetection": {
+      "wtf1": 95.3084760945023,
+      "n": 117
+    },
+    "changeDecision": {
+      "wtf1": 93.29231692677071,
+      "n": 119
+    },
+    "revisionType": {
+      "wtf1": null,
+      "n": 0
+    }
+  }
+}

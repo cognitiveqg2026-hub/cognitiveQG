@@ -1,0 +1,5 @@
+model,annotator,question_position,coverage_valid,coverage_total,Judge_ReasoningDepth,Judge_ReasoningDepth_std,Judge_ContextualRelevance,Judge_ContextualRelevance_std,Judge_CriticalThinking,Judge_CriticalThinking_std,Judge_PedagogicalEquiv,Judge_PedagogicalEquiv_std,Judge_SemanticEquiv,Judge_SemanticEquiv_std,Judge_FocusAppropriateness,Judge_FocusAppropriateness_std,Judge_Composite,Judge_Composite_std
+gpt-5_causation_noise_v2,p,1,60,60,4.0167,1.0082,4.1667,1.0827,3.9833,1.0407,2.9833,1.1327,2.9000,1.1504,3.9000,1.2477,3.6583,0.9620
+gpt-5_causation_noise_v2,p,2,60,60,4.3500,0.8129,4.4000,0.8794,4.3500,0.7708,3.2667,1.1528,3.1667,1.1714,4.1667,0.9516,3.9500,0.7966
+gpt-5_causation_noise_v2,p,3,60,60,4.3667,0.7063,4.3000,1.0214,4.3833,0.7766,3.3000,1.2423,3.1333,1.1898,4.1000,1.0599,3.9305,0.8423
+gpt-5_causation_noise_v2,p,overall,180,180,4.2444,0.8668,4.2889,1.0027,4.2389,0.8905,3.1833,1.1854,3.0667,1.1766,4.0556,1.0991,3.8463,0.8799

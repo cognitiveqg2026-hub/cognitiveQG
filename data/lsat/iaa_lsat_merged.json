@@ -1,0 +1,410 @@
+{
+  "n": 20,
+  "sections": {
+    "INTERPRETATION": [
+      "Initial Understanding",
+      "Stance Target",
+      "Knowledge Domain"
+    ],
+    "ANALYSIS": [
+      "Paraphrase of Core Claim",
+      "Core Claim",
+      "Minor Claim",
+      "Premise",
+      "Reasoning Type",
+      "Has Assumption",
+      "Missing Component"
+    ],
+    "INFERENCE": [
+      "Positive Consequences",
+      "Negative Consequences",
+      "Primary Domain Affected",
+      "Alternative Type",
+      "Alternative Keywords"
+    ],
+    "EVALUATION": [
+      "Inference Score",
+      "Credibility Factors",
+      "Logical Fallacy",
+      "Trustworthiness",
+      "Trust Explanation"
+    ],
+    "EXPLANATION": [
+      "Target Explanation",
+      "Reasoning Structure",
+      "Span Eval. (span1)",
+      "Span Eval. (span2)",
+      "Span Eval. (span3)",
+      "Inductive/Ded. Term X",
+      "Inductive/Ded. Term Y",
+      "Good Evidence",
+      "Bad Evidence",
+      "Fallacy Span",
+      "No Fallacy Explanation"
+    ],
+    "SELF-REGULATION": [
+      "Bias Detection",
+      "Heuristic Detection",
+      "Error Detection",
+      "Change Decision",
+      "Revision Phases",
+      "Revision Reason",
+      "Revision Type"
+    ],
+    "SOCRATIC QUESTIONS": [
+      "Socratic Question 1",
+      "Socratic Question 2",
+      "Socratic Question 3"
+    ]
+  },
+  "results": {
+    "Initial Understanding": {
+      "type": "span",
+      "metrics": {
+        "jaccard": 0.3418939393939394,
+        "rouge_l": 0.4097564935064935,
+        "bert": 0.49838027358055115
+      }
+    },
+    "Stance Target": {
+      "type": "cat",
+      "metrics": {
+        "kappa": 0.8571428571428572,
+        "pabak": 0.8999999999999999,
+        "oa": 0.95,
+        "gwet": 0.9394398183194549
+      }
+    },
+    "Knowledge Domain": {
+      "type": "cat",
+      "metrics": {
+        "kappa": 0.0,
+        "pabak": 1.0,
+        "oa": 1.0,
+        "gwet": 1.0
+      }
+    },
+    "Paraphrase of Core Claim": {
+      "type": "span",
+      "metrics": {
+        "jaccard": 0.2844492174847034,
+        "rouge_l": 0.41699308130809676,
+        "bert": 0.6226539611816406
+      }
+    },
+    "Core Claim": {
+      "type": "span",
+      "metrics": {
+        "jaccard": 0.9011539983886531,
+        "rouge_l": 0.9475294067585567,
+        "bert": 0.9278643727302551
+      }
+    },
+    "Minor Claim": {
+      "type": "span",
+      "metrics": {
+        "jaccard": 0.9524597415395643,
+        "rouge_l": 0.9860962566844921,
+        "bert": 0.9751322269439697
+      }
+    },
+    "Premise": {
+      "type": "span",
+      "metrics": {
+        "jaccard": 0.8590546476661435,
+        "rouge_l": 0.8913893668656169,
+        "bert": 0.8942785859107971
+      }
+    },
+    "Reasoning Type": {
+      "type": "cat",
+      "metrics": {
+        "kappa": 1.0,
+        "pabak": 1.0,
+        "oa": 1.0,
+        "gwet": 1.0
+      }
+    },
+    "Has Assumption": {
+      "type": "cat",
+      "metrics": {
+        "kappa": 1.0,
+        "pabak": 1.0,
+        "oa": 1.0,
+        "gwet": 1.0
+      }
+    },
+    "Missing Component": {
+      "type": "span",
+      "metrics": {
+        "jaccard": 0.16732112794612794,
+        "rouge_l": 0.26671840756447435,
+        "bert": 0.5129218697547913
+      }
+    },
+    "Positive Consequences": {
+      "type": "span",
+      "metrics": {
+        "jaccard": 0.15183608058608059,
+        "rouge_l": 0.22709150326797384,
+        "bert": 0.3405861258506775
+      }
+    },
+    "Negative Consequences": {
+      "type": "span",
+      "metrics": {
+        "jaccard": 0.08845238095238095,
+        "rouge_l": 0.15939014202172097,
+        "bert": 0.3791544735431671
+      }
+    },
+    "Primary Domain Affected": {
+      "type": "cat",
+      "metrics": {
+        "kappa": 0.9322033898305084,
+        "pabak": 0.8999999999999999,
+        "oa": 0.95,
+        "gwet": 0.9455411844792375
+      }
+    },
+    "Alternative Type": {
+      "type": "cat",
+      "metrics": {
+        "kappa": 0.7058823529411764,
+        "pabak": 0.8,
+        "oa": 0.9,
+        "gwet": 0.8798798798798799
+      }
+    },
+    "Alternative Keywords": {
+      "type": "span",
+      "metrics": {
+        "jaccard": 0.12621553884711778,
+        "rouge_l": 0.19099224447050533,
+        "bert": 0.3210701644420624
+      }
+    },
+    "Inference Score": {
+      "type": "cat",
+      "metrics": {
+        "kappa": 0.42307692307692313,
+        "pabak": 0.3999999999999999,
+        "oa": 0.7,
+        "gwet": 0.6039603960396038
+      }
+    },
+    "Credibility Factors": {
+      "type": "multi",
+      "metrics": {
+        "kappa": 0.5238095238095238,
+        "exact": 0.85,
+        "jaccard": 0.85,
+        "gwet": 0.8329466357308585
+      }
+    },
+    "Logical Fallacy": {
+      "type": "cat",
+      "metrics": {
+        "kappa": 0.7132616487455197,
+        "pabak": 0.6000000000000001,
+        "oa": 0.8,
+        "gwet": 0.7738515901060071
+      }
+    },
+    "Trustworthiness": {
+      "type": "multi",
+      "metrics": {
+        "kappa": 0.41860465116279066,
+        "exact": 0.5,
+        "jaccard": 0.7625,
+        "gwet": 0.44886711573790566
+      }
+    },
+    "Trust Explanation": {
+      "type": "span",
+      "metrics": {
+        "jaccard": 0.19204550991209568,
+        "rouge_l": 0.3213136167611432,
+        "bert": 0.36971384286880493
+      }
+    },
+    "Target Explanation": {
+      "type": "cat",
+      "metrics": {
+        "kappa": 0.9227799227799228,
+        "pabak": 0.8999999999999999,
+        "oa": 0.95,
+        "gwet": 0.9418886198547215
+      }
+    },
+    "Reasoning Structure": {
+      "type": "cat",
+      "metrics": {
+        "kappa": 0.8333333333333334,
+        "pabak": 0.894736842105263,
+        "oa": 0.9473684210526315,
+        "gwet": 0.9444281953787657
+      }
+    },
+    "Span Eval. (span1)": {
+      "type": "cat",
+      "metrics": {
+        "kappa": 0.5789473684210527,
+        "pabak": 0.5,
+        "oa": 0.75,
+        "gwet": 0.6913183279742765
+      }
+    },
+    "Span Eval. (span2)": {
+      "type": "cat",
+      "metrics": {
+        "kappa": 0.8677685950413223,
+        "pabak": 0.875,
+        "oa": 0.9375,
+        "gwet": 0.9258687258687258
+      }
+    },
+    "Span Eval. (span3)": {
+      "type": "cat",
+      "metrics": {
+        "kappa": 0.0,
+        "pabak": 1.0,
+        "oa": 1.0,
+        "gwet": 1.0
+      }
+    },
+    "Inductive/Ded. Term X": {
+      "type": "span",
+      "metrics": {
+        "jaccard": 0.6103439703732371,
+        "rouge_l": 0.687061525413769,
+        "bert": 0.6808260679244995
+      }
+    },
+    "Inductive/Ded. Term Y": {
+      "type": "span",
+      "metrics": {
+        "jaccard": 0.7595562423687423,
+        "rouge_l": 0.8420751781650582,
+        "bert": 0.8243985176086426
+      }
+    },
+    "Good Evidence": {
+      "type": "span",
+      "metrics": {
+        "jaccard": 0.13510633391063,
+        "rouge_l": 0.1939140335150183,
+        "bert": 0.34741273522377014
+      }
+    },
+    "Bad Evidence": {
+      "type": "span",
+      "metrics": {
+        "jaccard": 0.10955830346479842,
+        "rouge_l": 0.17461349570424373,
+        "bert": 0.3649229407310486
+      }
+    },
+    "Fallacy Span": {
+      "type": "span",
+      "metrics": {
+        "jaccard": 0.6946886446886447,
+        "rouge_l": 0.7716803636999476,
+        "bert": 0.7790505290031433
+      }
+    },
+    "No Fallacy Explanation": {
+      "type": "span",
+      "metrics": {
+        "jaccard": 0.2896189458689459,
+        "rouge_l": 0.453692736869919,
+        "bert": 0.5712772607803345
+      }
+    },
+    "Bias Detection": {
+      "type": "multi",
+      "metrics": {
+        "kappa": 0.0,
+        "exact": 1.0,
+        "jaccard": 1.0,
+        "gwet": 1.0
+      }
+    },
+    "Heuristic Detection": {
+      "type": "multi",
+      "metrics": {
+        "kappa": 0.0,
+        "exact": 0.95,
+        "jaccard": 1.0,
+        "gwet": 0.9474375821287778
+      }
+    },
+    "Error Detection": {
+      "type": "span",
+      "metrics": {
+        "jaccard": null,
+        "rouge_l": null,
+        "bert": null
+      }
+    },
+    "Change Decision": {
+      "type": "cat",
+      "metrics": {
+        "kappa": 0.0,
+        "pabak": 1.0,
+        "oa": 1.0,
+        "gwet": 1.0
+      }
+    },
+    "Revision Phases": {
+      "type": "multi",
+      "metrics": {
+        "kappa": 0.0,
+        "exact": 1.0,
+        "jaccard": null,
+        "gwet": 1.0
+      }
+    },
+    "Revision Reason": {
+      "type": "span",
+      "metrics": {
+        "jaccard": null,
+        "rouge_l": null,
+        "bert": null
+      }
+    },
+    "Revision Type": {
+      "type": "cat",
+      "metrics": {
+        "kappa": null,
+        "pabak": null,
+        "oa": null,
+        "gwet": null
+      }
+    },
+    "Socratic Question 1": {
+      "type": "span",
+      "metrics": {
+        "jaccard": 0.168002081202919,
+        "rouge_l": 0.2532695832579729,
+        "bert": 0.41684889793395996
+      }
+    },
+    "Socratic Question 2": {
+      "type": "span",
+      "metrics": {
+        "jaccard": 0.13339386827571348,
+        "rouge_l": 0.20954488273055305,
+        "bert": 0.3666228652000427
+      }
+    },
+    "Socratic Question 3": {
+      "type": "span",
+      "metrics": {
+        "jaccard": 0.1398486528914299,
+        "rouge_l": 0.22622245038649438,
+        "bert": 0.38496890664100647
+      }
+    }
+  }
+}

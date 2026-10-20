@@ -1,75 +1,71 @@
 # CognitiveQG
 
-Dataset, annotation guidelines, and prompt templates for the paper:
+Data, prompts and code for the paper:
 
 > **CognitiveQG: A Diagnostic Benchmark for Reasoning-Trace Evaluation in Socratic Question Generation**
-> Anonymous Author, Anonymous Author, Anonymous Author, Anonymous Author, Anonymous Author
-> *IEEE Access*, 2026
+> *IEEE Access* (under review), 2026
 
-CognitiveQG evaluates whether language models produce structured reasoning traces that
-agree with expert annotations under Facione's critical-thinking framework, and whether
-those traces are reflected in the Socratic questions the models generate.
+CognitiveQG tests whether language models write reasoning traces that agree with expert annotations
+under Facione's critical-thinking framework, and whether the Socratic questions they generate follow
+from those traces.
 
-**Benchmark at a glance:** 120 argumentative texts (FOCUS development split, dev1–dev12),
-two expert annotators (median Gwet's AC₁ = 0.88 on categorical fields), 45 annotation
-fields across seven phases (Facione's six critical-thinking phases + Socratic question
-generation), 10,800 expert annotation decisions in total.
+**At a glance:** 120 argumentative texts (FOCUS development split, dev1-dev12), two expert annotators,
+44 annotation fields per argument (41 reasoning-trace fields over Facione's six phases, plus up to three
+Socratic questions), and a 20-argument LSAT extension.
 
----
-
-## Repository structure
+## Repository layout
 
 ```
-.
-├── data/
-│   ├── a1_dev1-12_gold.json         # 120-argument expert gold annotations (A1)
-│   ├── a2_dev1-12_gold.json         # second annotator (A2), 120 args, A1-aligned -> IAA
-│   ├── guidelines/                  # annotation guidelines (PDF)
-│   │   ├── CognitiveQG-Annotaton_Guideline_final.pdf   # full seven-phase guideline
-│   │   └── Error_Analysis_guideline.pdf                # trace-question consistency (Case 3 & 4)
-│   ├── annotation_tool/             # self-contained HTML annotation interface
-│   ├── README.md                    # data format + FOCUS source pointer
-│   └── LICENSE                      # CC BY 4.0 (annotations)
-├── prompts/                         # verbatim prompt templates (P1 baseline, GPT-5.5 judge rubric)
-└── LICENSE                          # MIT (annotation tool)
+data/            expert annotations (A1, A2), guidelines, annotation tool, model outputs, judge scores
+prompts/         baseline prompt (P1) and the GPT-5.5 judge rubric
+generation/      code that generates the model outputs (baseline and trace substitution); see generation/README.md
+iaa_core/        metric code (exact match, Jaccard, Gwet's AC1, judge helpers)
+src/score_v41/   Combined Trace Score (Eq. 2) and the tables built from it; see src/score_v41/README.md
+scripts/         one script per remaining table or figure; scripts/revision/ covers the revision tables
+tests/           checks of the headline numbers
+results/         reference outputs and figures
+run.sh           runs the evaluation end to end
+DATA.md          source and license of each dataset
 ```
 
----
+## Reproducing the tables
 
-## Annotation scheme
+No GPU or API key is needed. Everything runs from the model outputs and judge scores in `data/`.
 
-Each argument is annotated across seven phases following Facione's critical-thinking
-framework: Interpretation, Analysis, Inference, Evaluation, Explanation, Self-Regulation,
-and Socratic Question Generation (up to three priority-ranked questions per argument).
-The 45 fields span categorical labels (e.g., `reasoningType`, `logicalFallacy`),
-multi-label fields (e.g., `credibilityFactors`, `biasDetection`), and span/free-text
-fields (e.g., `coreClaim`, `premise`, `span1–3`). Field definitions, decision trees, and
-worked examples are provided in `data/guidelines/`.
+```bash
+./run.sh
+```
 
-The two annotator files share the same `{"annotations": [...]}` structure and
-`argumentIndex` (0–119) convention, so they are directly joinable for inter-annotator
-agreement analysis.
+This creates a virtual environment, installs `requirements.txt`, runs the scripts below and the tests.
+It takes a few minutes. Outputs go to `src/score_v41/out/`, `results/out/` and `results/figures/`.
 
----
+| Paper item | Command |
+|---|---|
+| Tables 5, 6, 9, 20, 21, 34 (S1), 35, 43 | `cd src/score_v41 && python3 src/run_all.py` |
+| Table 34 (S2, S3) | `python3 scripts/compute_table34_s2_s3.py` |
+| Table 4 (400-pair human validation of the judge) | `python3 scripts/analyze_semeq_human_judge_agreement.py --ratings-file data/human_validation/semeq_dev1-12_8models_seed44_ratings_MAIN.json --sample-file data/human_validation/dev1-12_semeq_sample_seed44.json --output results/out/human_vs_3judges.csv` |
+| Tables 23-26 (trace substitution) | `python3 scripts/analyze_causation_judge_120_stats.py --output-dir results/out/causation_judge_120_stats` |
+| Figure 2 | `python3 scripts/tables_figures/plot_figure2.py` |
+| Figure 4 (LSAT) | `python3 scripts/tables_figures/plot_figure4_lsat.py` |
+| Tables 3, 11, 27-30, 32-33 | see `scripts/revision/README.md` |
 
-## Reproducibility
+Tables 3 and 11 use BERTScore and are not run by `run.sh`. The BERTScore values depend on the
+`transformers` version; the versions used in the paper are pinned in `requirements.txt`.
 
-The two released annotator files share the same structure and `argumentIndex`
-convention, so inter-annotator agreement is directly re-computable from the data alone.
-Evaluation code is not distributed in this repository; the metric definitions
-(Gwet's AC₁, Jaccard, rescaled BERTScore, the Combined Reasoning Trace Score, and the
-GPT-5.5 judge protocol) are documented in the paper, and the judge's system prompt is
-released verbatim in `prompts/`.
+## Generating model outputs
 
----
+`generation/` has the code that produced the outputs in `data/`: baseline reasoning traces and questions
+(Tier 1) and the Vanilla, Oracle and Noise conditions (Tier 2). It needs a GPU for the open-source models
+and an OpenAI API key for GPT-4o and GPT-5.5. See `generation/README.md`.
 
-## Data & license
+## Source arguments
 
-- **Annotations** (`data/`) — **CC BY 4.0** (see `data/LICENSE`).
-- **Annotation tool** — **MIT** (see `LICENSE`).
+The argument texts are not redistributed. The `argument` field is blank in every data file. The
+arguments come from the FOCUS development split (Pothong et al., IJCNLP-AACL 2025), which reuses
+SoQG-2023 (Ang et al., EACL 2023); the LSAT items come from AGIEval. Obtain them from those releases and
+join them by `argumentIndex`. See `data/README.md` and `DATA.md`.
 
-The source **argument texts are not redistributed** here: the `argument` field is
-intentionally blank throughout `data/`. The arguments come from the **FOCUS**
-development split — obtain them from the FOCUS release and re-join via the
-`argumentIndex` field (see `data/README.md`). FOCUS arguments remain under FOCUS's
-own terms.
+## License
+
+- Annotations, guidelines and other data in `data/`: CC BY 4.0 (`data/LICENSE`).
+- Code and the annotation tool: MIT (`LICENSE`).
